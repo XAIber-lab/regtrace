@@ -1,0 +1,659 @@
+{
+  "contextualization_id": "ctx_annot_001",
+  "document_id": "Testo-integrale-al-15-aggto_TO_Testo-integrale-al-16-aggto",
+  "source_annotation_id": "annot_001",
+  "language": "it",
+  "change_contextualizations": [
+    {
+      "change_id": "change_001_new_section_vii_internet_payments",
+      "cybersecurity_relevance": "relevant",
+      "relevance_rationale": "La nuova sezione riguarda esplicitamente la sicurezza dei pagamenti tramite internet e introduce un distinto ambito di governance della sicurezza ICT. La sola creazione della struttura non modifica tuttavia, di per sé, un controllo operativo.",
+      "classe": "Consigliata",
+      "priority": "MEDIA",
+      "framework_mappings": [
+        {
+          "subcategory_id": "ID.GV-03",
+          "subcategory_text": "ID.GV-03: I requisiti legali in materia di cybersecurity, con l'inclusione degli obblighi riguardanti la privacy e le libertà civili, sono compresi e gestiti",
+          "mapping_weight": "ALTO",
+          "rationale": "La nuova sezione identifica un ulteriore insieme di requisiti normativi applicabili alla sicurezza dei servizi di pagamento via internet."
+        }
+      ],
+      "prototype_actions": [],
+      "control_actions": [],
+      "notes": "Nessuna azione operativa proposta per la sola introduzione dell'intestazione della Sezione VII; gli obblighi sostanziali sono trattati nelle modifiche successive."
+    },
+    {
+      "change_id": "change_002_external_reference_update_eba_guidelines",
+      "cybersecurity_relevance": "relevant",
+      "relevance_rationale": "La modifica sostituisce il riferimento esterno applicabile alla sicurezza dei pagamenti via internet, passando dalle raccomandazioni BCE agli Orientamenti finali ABE. Si tratta di un aggiornamento della fonte normativa, non di una modifica autonoma dei controlli.",
+      "classe": "Consigliata",
+      "priority": "BASSA",
+      "framework_mappings": [
+        {
+          "subcategory_id": "ID.GV-03",
+          "subcategory_text": "ID.GV-03: I requisiti legali in materia di cybersecurity, con l'inclusione degli obblighi riguardanti la privacy e le libertà civili, sono compresi e gestiti",
+          "mapping_weight": "ALTO",
+          "rationale": "L'organizzazione deve identificare e gestire la fonte ABE aggiornata come riferimento normativo per la sicurezza dei pagamenti via internet."
+        }
+      ],
+      "prototype_actions": [],
+      "control_actions": [],
+      "notes": "Aggiornamento meramente referenziale: le azioni operative derivanti dagli Orientamenti ABE sono considerate nelle modifiche che ne impongono espressamente l'applicazione."
+    },
+    {
+      "change_id": "change_003_scope_extension_internet_payments",
+      "cybersecurity_relevance": "relevant",
+      "relevance_rationale": "La modifica estende espressamente alle succursali interessate l'obbligo di rispettare la Sezione VII quando prestano servizi di pagamento tramite internet, modificando il perimetro soggettivo di un requisito di sicurezza ICT.",
+      "classe": "Obbligatoria",
+      "priority": "ALTA",
+      "framework_mappings": [
+        {
+          "subcategory_id": "ID.GV-03",
+          "subcategory_text": "ID.GV-03: I requisiti legali in materia di cybersecurity, con l'inclusione degli obblighi riguardanti la privacy e le libertà civili, sono compresi e gestiti",
+          "mapping_weight": "ALTO",
+          "rationale": "La nuova clausola determina quali soggetti devono gestire i requisiti di sicurezza previsti dalla Sezione VII per i pagamenti via internet."
+        }
+      ],
+      "prototype_actions": [
+        {
+          "action": "modify",
+          "subcategory_id": "ID.GV-03",
+          "subcategory_text": "ID.GV-03: I requisiti legali in materia di cybersecurity, con l'inclusione degli obblighi riguardanti la privacy e le libertà civili, sono compresi e gestiti",
+          "existing_row": 74,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Titolo IV, Capitolo 4, Sezione I, Ambito di applicazione; Sezione VII, paragrafo 1",
+          "rationale": "Integrare il riferimento della riga esistente per rappresentare il nuovo perimetro di applicazione dei requisiti di sicurezza dei pagamenti via internet.",
+          "confidence_assessment": {
+            "score": 100,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        }
+      ],
+      "control_actions": [],
+      "notes": "La modifica riguarda l'applicabilità soggettiva e non introduce, separatamente, una nuova misura tecnica da inserire nel catalogo dei controlli."
+    },
+    {
+      "change_id": "change_004_new_internet_payment_obligations",
+      "cybersecurity_relevance": "relevant",
+      "relevance_rationale": "La disposizione impone alle banche che offrono pagamenti via internet di applicare gli Orientamenti ABE, integrandoli nella governance del sistema informativo, nella gestione del rischio informatico, nella sicurezza ICT e nella gestione dei dati. Richiama inoltre l'autenticazione forte come obbligo specifico.",
+      "classe": "Obbligatoria",
+      "priority": "ALTA",
+      "framework_mappings": [
+        {
+          "subcategory_id": "ID.GV-03",
+          "subcategory_text": "ID.GV-03: I requisiti legali in materia di cybersecurity, con l'inclusione degli obblighi riguardanti la privacy e le libertà civili, sono compresi e gestiti",
+          "mapping_weight": "ALTO",
+          "rationale": "L'adesione agli Orientamenti ABE è resa obbligatoria per le banche che prestano servizi di pagamento via internet."
+        },
+        {
+          "subcategory_id": "ID.GV-04",
+          "subcategory_text": "ID.GV-04: La governance ed i processi di risk management includono la gestione dei rischi legati alla cybersecurity",
+          "mapping_weight": "ALTO",
+          "rationale": "Gli Orientamenti integrano espressamente la governance del sistema informativo e la gestione del rischio informatico."
+        },
+        {
+          "subcategory_id": "PR.AC-07",
+          "subcategory_text": "PR.AC-07: Le modalità di autenticazione (es. autenticazione a fattore singolo o multiplo) per gli utenti, i dispositivi e altri asset sono commisurate al rischio della transazione (es. rischi legati alla sicurezza e privacy degli individui e altri rischi dell'organizzazione)",
+          "mapping_weight": "ALTO",
+          "rationale": "La disposizione identifica l'autenticazione forte come esempio di obbligo specifico non rimesso alla sola applicazione proporzionata."
+        },
+        {
+          "subcategory_id": "ID.RA-05",
+          "subcategory_text": "ID.RA-05: Le minacce, le vulnerabilità, le relative probabilità di accadimento e conseguenti impatti sono utilizzati per determinare il rischio",
+          "mapping_weight": "MEDIO",
+          "rationale": "L'applicazione proporzionata degli Orientamenti deve tenere conto della natura, dimensione e complessità dei servizi e dei rischi da fronteggiare."
+        }
+      ],
+      "prototype_actions": [
+        {
+          "action": "modify",
+          "subcategory_id": "ID.GV-03",
+          "subcategory_text": "ID.GV-03: I requisiti legali in materia di cybersecurity, con l'inclusione degli obblighi riguardanti la privacy e le libertà civili, sono compresi e gestiti",
+          "existing_row": 74,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Titolo IV, Capitolo 4, Sezione VII, paragrafo 1; Orientamenti finali ABE sulla sicurezza dei pagamenti via internet",
+          "rationale": "Aggiungere il nuovo obbligo di identificare, recepire e gestire gli Orientamenti ABE applicabili ai servizi di pagamento via internet.",
+          "confidence_assessment": {
+            "score": 100,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "action": "modify",
+          "subcategory_id": "ID.GV-04",
+          "subcategory_text": "ID.GV-04: La governance ed i processi di risk management includono la gestione dei rischi legati alla cybersecurity",
+          "existing_row": 83,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Titolo IV, Capitolo 4, Sezione II, paragrafo 3; Sezione VII, paragrafo 1",
+          "rationale": "Estendere la contestualizzazione esistente alla governance e alla gestione proporzionata del rischio informatico per i servizi di pagamento via internet.",
+          "confidence_assessment": {
+            "score": 100,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "action": "modify",
+          "subcategory_id": "PR.AC-07",
+          "subcategory_text": "PR.AC-07: Le modalità di autenticazione (es. autenticazione a fattore singolo o multiplo) per gli utenti, i dispositivi e altri asset sono commisurate al rischio della transazione (es. rischi legati alla sicurezza e privacy degli individui e altri rischi dell'organizzazione)",
+          "existing_row": 246,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Titolo IV, Capitolo 4, Sezione IV, paragrafo 3; Sezione VII, paragrafo 1; Orientamenti finali ABE sulla sicurezza dei pagamenti via internet",
+          "rationale": "Integrare il riferimento all'autenticazione forte prescritta dagli Orientamenti ABE per le operazioni di pagamento via internet.",
+          "confidence_assessment": {
+            "score": 100,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        }
+      ],
+      "control_actions": [
+        {
+          "action": "modify",
+          "existing_control_row": 71,
+          "existing_control_id": "70",
+          "control_text": "Le banche che prestano servizi di pagamento tramite internet devono adottare, documentare, approvare e riesaminare almeno annualmente una politica formale di sicurezza conforme agli Orientamenti finali ABE sulla sicurezza dei pagamenti via internet. La politica deve definire ruoli, responsabilità, processo di valutazione del rischio informatico, criteri documentati di proporzionalità, requisiti obbligatori applicabili e modalità di verifica periodica della conformità.",
+          "subcategories_with_weight": "ID.GV-01 (ALTO), ID.GV-03 (ALTO), ID.GV-04 (ALTO)",
+          "references": "Circolare n. 285 del 17 dicembre 2013, Titolo IV, Capitolo 4, Sezione VII, paragrafo 1; Orientamenti finali ABE sulla sicurezza dei pagamenti via internet",
+          "priority": "ALTA",
+          "delegated_to": "Responsabile Sicurezza ICT, Funzione Compliance e Funzione Gestione dei Rischi",
+          "rationale": "Il controllo esistente contempla già una politica per i pagamenti via internet, ma deve essere aggiornato per rendere verificabili il recepimento obbligatorio degli Orientamenti ABE e l'applicazione documentata del principio di proporzionalità.",
+          "confidence_assessment": {
+            "score": 95,
+            "level": "high",
+            "deterministic_score": 85,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 10,
+                "max_points": 15,
+                "status": "partial"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "action": "modify",
+          "existing_control_row": 108,
+          "existing_control_id": "107",
+          "control_text": "Le banche devono applicare l'autenticazione forte alle operazioni e agli accessi relativi ai servizi di pagamento via internet nei casi prescritti dagli Orientamenti ABE. I meccanismi di autenticazione devono essere commisurati al rischio della transazione, proteggere credenziali e fattori di autenticazione, gestire e documentare eventuali eccezioni ammesse e essere sottoposti a verifiche tecniche periodiche.",
+          "subcategories_with_weight": "PR.AC-07 (ALTO), PR.AC-01 (MEDIO), PR.AC-06 (MEDIO)",
+          "references": "Circolare n. 285 del 17 dicembre 2013, Titolo IV, Capitolo 4, Sezione VII, paragrafo 1; Orientamenti finali ABE sulla sicurezza dei pagamenti via internet",
+          "priority": "ALTA",
+          "delegated_to": "Responsabile Identity and Access Management e Responsabile Sicurezza dei Canali Digitali",
+          "rationale": "Il controllo esistente sulle procedure di accesso sicuro deve essere esteso all'obbligo specifico di autenticazione forte per i pagamenti via internet.",
+          "confidence_assessment": {
+            "score": 90,
+            "level": "high",
+            "deterministic_score": 80,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 5,
+                "max_points": 15,
+                "status": "partial"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Gli esempi di migliori prassi dell'Allegato 1 degli Orientamenti ABE restano rimessi alla valutazione della banca e non sono classificati come obblighi autonomi."
+    },
+    {
+      "change_id": "change_005_security_controls_and_monitoring_update",
+      "cybersecurity_relevance": "relevant",
+      "relevance_rationale": "La modifica integra una disposizione tecnica sui requisiti di sicurezza, imponendo l'applicazione degli Orientamenti ABE ai servizi di pagamento via internet nel contesto della segmentazione di rete, del controllo dei flussi e della protezione degli accessi tramite canali pubblici.",
+      "classe": "Obbligatoria",
+      "priority": "ALTA",
+      "framework_mappings": [
+        {
+          "subcategory_id": "PR.AC-05",
+          "subcategory_text": "PR.AC-05: L'integrità di rete è protetta (es. segregazione di rete, segmentazione di rete)",
+          "mapping_weight": "ALTO",
+          "rationale": "La disposizione richiede segmentazione della rete e controllo dei flussi tra domini con livelli di sicurezza differenti."
+        },
+        {
+          "subcategory_id": "PR.PT-04",
+          "subcategory_text": "PR.PT-04: Le reti di comunicazione e controllo sono protette",
+          "mapping_weight": "ALTO",
+          "rationale": "Gli accessi a sistemi e servizi critici tramite reti pubbliche devono rispettare rigorosi requisiti di sicurezza e gli Orientamenti ABE."
+        },
+        {
+          "subcategory_id": "PR.AC-07",
+          "subcategory_text": "PR.AC-07: Le modalità di autenticazione (es. autenticazione a fattore singolo o multiplo) per gli utenti, i dispositivi e altri asset sono commisurate al rischio della transazione (es. rischi legati alla sicurezza e privacy degli individui e altri rischi dell'organizzazione)",
+          "mapping_weight": "MEDIO",
+          "rationale": "L'applicazione degli Orientamenti ABE ai canali internet comprende requisiti di autenticazione commisurati al rischio delle transazioni."
+        },
+        {
+          "subcategory_id": "DE.CM-01",
+          "subcategory_text": "DE.CM-01: Viene svolto il monitoraggio della rete informatica per rilevare potenziali eventi di cybersecurity",
+          "mapping_weight": "MEDIO",
+          "rationale": "Il controllo dei flussi scambiati tra domini di rete richiede capacità di osservazione e monitoraggio del traffico rilevante."
+        }
+      ],
+      "prototype_actions": [
+        {
+          "action": "modify",
+          "subcategory_id": "PR.AC-05",
+          "subcategory_text": "PR.AC-05: L'integrità di rete è protetta (es. segregazione di rete, segmentazione di rete)",
+          "existing_row": 227,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Titolo IV, Capitolo 4, Sezione IV, paragrafo 3; Sezione VII, paragrafo 1",
+          "rationale": "Integrare la contestualizzazione della segmentazione di rete con il nuovo obbligo di applicare gli Orientamenti ABE ai servizi di pagamento via internet.",
+          "confidence_assessment": {
+            "score": 100,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "action": "modify",
+          "subcategory_id": "PR.PT-04",
+          "subcategory_text": "PR.PT-04: Le reti di comunicazione e controllo sono protette",
+          "existing_row": 497,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Titolo IV, Capitolo 4, Sezione IV, paragrafo 3; Sezione VII, paragrafo 1",
+          "rationale": "Estendere il riferimento della protezione delle reti ai requisiti ABE applicabili agli accessi a servizi critici mediante canali pubblici.",
+          "confidence_assessment": {
+            "score": 100,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 10,
+            "self_consistency_status": "matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              }
+            ]
+          }
+        }
+      ],
+      "control_actions": [
+        {
+          "action": "modify",
+          "existing_control_row": 149,
+          "existing_control_id": "148",
+          "control_text": "Le banche devono applicare una difesa in profondità ai servizi di pagamento via internet, segmentando la rete in domini coerenti con i rispettivi livelli di sicurezza e controllando i flussi tra sistemi interni, applicazioni core, sistemi esterni e utenti. Gli accessi a sistemi e servizi critici tramite reti pubbliche devono essere protetti mediante controlli multilivello, inclusi firewall, autenticazione forte ove prescritta, cifratura e monitoraggio del traffico. Configurazioni, regole di filtraggio e flussi autorizzati devono essere documentati, riesaminati periodicamente e verificati in conformità agli Orientamenti ABE.",
+          "subcategories_with_weight": "PR.AC-05 (ALTO), PR.PT-04 (ALTO), PR.AC-07 (MEDIO), DE.CM-01 (MEDIO)",
+          "references": "Circolare n. 285 del 17 dicembre 2013, Titolo IV, Capitolo 4, Sezione IV, paragrafo 3 e Sezione VII, paragrafo 1; Orientamenti finali ABE sulla sicurezza dei pagamenti via internet",
+          "priority": "ALTA",
+          "delegated_to": "Responsabile Sicurezza delle Reti e Responsabile Sicurezza dei Canali Digitali",
+          "rationale": "Il controllo esistente sulla difesa in profondità presenta subcategorie sovrapposte e deve essere aggiornato per includere espressamente il controllo dei flussi tra domini, la protezione dei canali pubblici e l'applicazione degli Orientamenti ABE.",
+          "confidence_assessment": {
+            "score": 90,
+            "level": "high",
+            "deterministic_score": 90,
+            "self_consistency_bonus": 0,
+            "self_consistency_status": "not_matched",
+            "components": [
+              {
+                "criterion": "subcategory_in_framework_core",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "cybersecurity_relevance_coherence",
+                "earned_points": 20,
+                "max_points": 20,
+                "status": "pass"
+              },
+              {
+                "criterion": "mapping_action_consistency",
+                "earned_points": 15,
+                "max_points": 15,
+                "status": "pass"
+              },
+              {
+                "criterion": "target_row_validation",
+                "earned_points": 25,
+                "max_points": 25,
+                "status": "pass"
+              },
+              {
+                "criterion": "no_fallback_or_downgrade",
+                "earned_points": 10,
+                "max_points": 10,
+                "status": "pass"
+              },
+              {
+                "criterion": "independent_run_agreement",
+                "earned_points": 0,
+                "max_points": 10,
+                "status": "fail"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "La proposta modifica un controllo tecnico già presente senza crearne uno duplicato."
+    }
+  ],
+  "merge_summary": {
+    "relevant_changes": 5,
+    "non_relevant_changes": 0,
+    "uncertain_changes": 0,
+    "new_items": 0,
+    "modifications": 9,
+    "deprecations": 0,
+    "summary": "Tutte le cinque modifiche sono pertinenti alla cybersecurity dei pagamenti via internet. Sono proposti sei aggiornamenti al prototipo di contestualizzazione e tre aggiornamenti a controlli esistenti, senza nuove righe né deprecazioni. Le modifiche meramente strutturali o referenziali non generano azioni operative autonome."
+  },
+  "confidence_scoring": {
+    "method": "deterministic_validation_plus_optional_independent_run_agreement",
+    "version": "1.0",
+    "self_consistency_requested": true,
+    "weights": {
+      "subcategory_in_framework_core": 20,
+      "cybersecurity_relevance_coherence": 20,
+      "mapping_action_consistency": 15,
+      "target_row_validation": 25,
+      "no_fallback_or_downgrade": 10,
+      "independent_run_agreement": 10
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "baseline_document_change_report",
+  "name": "baseline_document_change_report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "changes"
+  ],
+  "properties": {
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "change_id",
+          "location",
+          "change_summary",
+          "change_type",
+          "motivation",
+          "evidence_before",
+          "evidence_after"
+        ],
+        "properties": {
+          "change_id": {
+            "type": "string"
+          },
+          "location": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "document_section",
+              "page_or_reference"
+            ],
+            "properties": {
+              "document_section": {
+                "type": "string"
+              },
+              "page_or_reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "change_summary": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "addition",
+              "deletion",
+              "modification",
+              "renumbering",
+              "relocation",
+              "other"
+            ]
+          },
+          "motivation": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_before": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_after": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

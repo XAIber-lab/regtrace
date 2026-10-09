@@ -1,0 +1,9 @@
+*.json text eol=lf
+*.md text eol=lf
+*.sha256 text eol=lf
+*.pdf binary
+*.xlsx binary
+
+proof_of_concept/** text eol=lf
+start_proof_of_concept.cmd text eol=crlf
+reproducibility_artifacts/sca_case_study_20261004/** -text whitespace=cr-at-eol

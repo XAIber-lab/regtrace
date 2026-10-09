@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "regulatory_change_annotations",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "annotation_id",
+    "document_id",
+    "comparison",
+    "diff",
+    "changes"
+  ],
+  "properties": {
+    "annotation_id": {
+      "type": "string"
+    },
+    "document_id": {
+      "type": "string"
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "target"
+      ],
+      "properties": {
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "file_name",
+            "version_label",
+            "date"
+          ],
+          "properties": {
+            "file_name": {
+              "type": "string"
+            },
+            "version_label": {
+              "type": "string"
+            },
+            "date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "target": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "file_name",
+            "version_label",
+            "date"
+          ],
+          "properties": {
+            "file_name": {
+              "type": "string"
+            },
+            "version_label": {
+              "type": "string"
+            },
+            "date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "diff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "diff_file"
+      ],
+      "properties": {
+        "diff_file": {
+          "type": "string"
+        }
+      }
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "change_id",
+          "raw_text",
+          "location",
+          "classification",
+          "classification_rationale",
+          "confidence_score",
+          "summary",
+          "references",
+          "notes"
+        ],
+        "properties": {
+          "change_id": {
+            "type": "string",
+            "pattern": "^change_[0-9]{3}_[a-z0-9_]+$"
+          },
+          "raw_text": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source",
+              "target",
+              "diff_links"
+            ],
+            "properties": {
+              "source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "target": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "diff_links": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "hunk_id",
+                    "diff_range",
+                    "excerpt"
+                  ],
+                  "properties": {
+                    "hunk_id": {
+                      "type": "string",
+                      "pattern": "^hunk_[0-9]{3,}$"
+                    },
+                    "diff_range": {
+                      "type": "string",
+                      "pattern": "^@@ .+ @@.*$"
+                    },
+                    "excerpt": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "location": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_location",
+              "target_location"
+            ],
+            "properties": {
+              "source_location": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "target_location": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "classification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "scope",
+              "change_operation",
+              "semantic",
+              "change_nature"
+            ],
+            "properties": {
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "document_level",
+                  "structural_level",
+                  "textual_level",
+                  "internal_reference",
+                  "external_reference"
+                ]
+              },
+              "change_operation": {
+                "type": "string",
+                "enum": [
+                  "create",
+                  "update",
+                  "delete"
+                ]
+              },
+              "semantic": {
+                "type": "string",
+                "enum": [
+                  "conceptual_change",
+                  "obligation_related_change",
+                  "temporal_change"
+                ]
+              },
+              "change_nature": {
+                "type": "string",
+                "enum": [
+                  "procedural",
+                  "technical"
+                ]
+              }
+            }
+          },
+          "classification_rationale": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "scope",
+              "change_operation",
+              "semantic",
+              "change_nature"
+            ],
+            "properties": {
+              "scope": {
+                "type": "string"
+              },
+              "change_operation": {
+                "type": "string"
+              },
+              "semantic": {
+                "type": "string"
+              },
+              "change_nature": {
+                "type": "string"
+              }
+            }
+          },
+          "confidence_score": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "classification",
+              "classification_rationale"
+            ],
+            "properties": {
+              "classification": {
+                "type": "string",
+                "enum": [
+                  "very_sure",
+                  "sure",
+                  "unsure",
+                  "weak",
+                  "very_weak"
+                ]
+              },
+              "classification_rationale": {
+                "type": "string",
+                "enum": [
+                  "very_sure",
+                  "sure",
+                  "unsure",
+                  "weak",
+                  "very_weak"
+                ]
+              }
+            }
+          },
+          "summary": {
+            "type": "string"
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulatory evolution · Proof of concept</title>
+  <meta name="description" content="A local proof of concept connecting regulatory change evidence, semantic annotations, contextualization proposals, and human review.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <aside class="sidebar">
+    <a class="brand" href="/"><span class="mark">↳</span><span>Regulatory<br><strong>evolution</strong></span></a>
+    <div class="sidebar-label">PROOF OF CONCEPT</div>
+    <nav id="navigation" aria-label="Workflow"></nav>
+    <button class="new-button" id="new-run">＋ New comparison</button>
+    <div class="sidebar-footer"><span class="local-dot"></span> Local proof of concept<p>João Trocado<br>Cybersecurity · 2025/2026</p></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">Research workspace <span>/</span> <b id="breadcrumb">Annotations</b></div><span class="local-label">LOCAL SESSION</span></header>
+    <main id="main" tabindex="-1">
+      <div class="workspace-heading"><div><div class="eyebrow">REGULATORY CHANGE WORKFLOW</div><h1>From source change to control update.</h1></div><div class="run-picker"><label for="run-select">Active comparison</label><select id="run-select"></select></div></div>
+      <div id="run-banner"></div><div id="stages" class="stages" aria-label="Methodological stages"></div>
+      <div id="content" aria-live="polite"><div class="empty">Loading retained thesis artifacts…</div></div>
+    </main>
+  </div>
+  <dialog id="modal"><div class="modal-top"><h2 id="modal-title"></h2><button class="icon-button" id="close-modal" aria-label="Close dialog">×</button></div><div id="modal-body"></div></dialog>
+  <div id="toast" role="status" hidden></div>
+</body>
+</html>

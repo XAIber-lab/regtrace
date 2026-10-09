@@ -1,0 +1,15 @@
+You are given a unified diff between two versions of a document.
+
+Identify each distinct change shown in the diff. For every change, report its
+location, a concise summary, its generic edit type, the apparent motivation or
+purpose where that is reasonably inferable from the text, and supporting text
+from before and after the change.
+
+Use only the generic edit types in the JSON schema.
+
+For page_or_reference, use a document heading, numbered provision, page, or
+the relevant unified-diff header when that is the only available reference.
+Use null for unavailable before/after evidence or for motivation that cannot
+be inferred.
+
+Return valid JSON matching the supplied schema and no additional text.

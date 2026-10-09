@@ -1,0 +1,146 @@
+{
+  "annotation_id": "annotation_001",
+  "document_id": "CELEX_32018R0389",
+  "comparison": {
+    "source": {
+      "file_name": "CELEX_32018R0389_EN_TXT.md",
+      "version_label": "2018 original text",
+      "date": null
+    },
+    "target": {
+      "file_name": "CELEX_02018R0389-20230725_EN_TXT.md",
+      "version_label": "2023-07-25 consolidated text",
+      "date": "2023-07-25"
+    }
+  },
+  "diff": {
+    "diff_file": "CELEX_32018R0389_EN_TXT_TO_CELEX_02018R0389-20230725_EN_TXT.diff"
+  },
+  "changes": [
+    {
+      "change_id": "change_001_direct_account_access_exemption",
+      "raw_text": {
+        "source": "## **Payment account information**\n\n1. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2 and to paragraph 2 of this Article and, where a payment service user is limited to accessing either or both of the following items online without disclosure of sensitive payment data:\n\n- (a) the balance of one or more designated payment accounts;\n\n- (b) the payment transactions executed in the last 90 days through one or more designated payment accounts.\n\n2. For the purpose of paragraph 1, payment service providers shall not be exempted from the application of strong customer authentication where either of the following condition is met:\n\n- (a) the payment service user is accessing online the information specified in paragraph 1 for the first time;\n\n- (b) more than 90 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1(b) and strong customer authentication was applied.",
+        "target": "**Access to the payment account information directly with the account servicing payment service provider**\n\n1. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2, where a payment service user is accessing its payment account online directly, provided that access is limited to one of the following items online without disclosure of sensitive payment data:\n\n- (a) the balance of one or more designated payment accounts;\n\n- (b) the payment transactions executed in the last 90 days through one or more designated payment accounts.\n\n2. By way of derogation from paragraph 1, payment service providers shall not be exempted from the application of strong customer authentication where one of the following conditions is met:\n\n- (a) the payment service user is accessing online the information specified in paragraph 1 for the first time;\n\n- (b) more than 180 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1 and strong customer authentication was applied.",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_010",
+            "diff_range": "@@ -234,21 +192,47 @@ _Article 9_",
+            "excerpt": "-## **Payment account information**\n+## **Access to the payment account information directly with the account servicing payment service provider**\n \n-1. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2 and to paragraph 2 of this Article and, where a payment service user is limited to accessing either or both of the following items online without disclosure of sensitive payment data:\n+1. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2, where a payment service user is accessing its payment account online directly, provided that access is limited to one of the following items online without disclosure of sensitive payment data:\n \n-2. For the purpose of paragraph 1, payment service providers shall not be exempted from the application of strong customer authentication where either of the following condition is met:\n+2. By way of derogation from paragraph 1, payment service providers shall not be exempted from the application of strong customer authentication where one of the following conditions is met:\n \n-- (b) more than 90 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1(b) and strong customer authentication was applied.\n+- (b) more than 180 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1 and strong customer authentication was applied."
+          }
+        ]
+      },
+      "location": {
+        "source_location": "Article 10(1)-(2)",
+        "target_location": "Article 10(1)-(2)"
+      },
+      "classification": {
+        "scope": "textual_level",
+        "change_operation": "update",
+        "semantic": "obligation_related_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "The existing Article 10 exemption is revised in place rather than replaced by a new structural unit.",
+        "change_operation": "The conditions for the existing exemption are modified, including the requirement that access be direct and the period before renewed authentication.",
+        "semantic": "The amendment narrows and clarifies eligibility for direct online access without strong customer authentication and extends the reauthentication interval from 90 to 180 days.",
+        "change_nature": "The principal effect concerns the regulatory conditions and process for applying an authentication exemption, rather than a concrete implementation control."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "The direct-access exemption from strong customer authentication is clarified to apply to online access directly through the account servicing payment service provider, and the reauthentication interval is increased from 90 to 180 days.",
+      "references": [
+        "Article 2",
+        "Article 10",
+        "Directive (EU) 2015/2366"
+      ],
+      "notes": null
+    },
+    {
+      "change_id": "change_002_account_information_service_provider_exemption",
+      "raw_text": {
+        "source": null,
+        "target": "## _Article 10a_\n\n## **Access to the payment account information through an account information service provider**\n\n1. Payment service providers shall not apply strong customer authentication where a payment service user is accessing its payment account online through an account information service provider, provided that access is limited to one of the following items online without disclosure of sensitive payment data:\n\n- (a) the balance of one or more designated payment accounts;\n\n- (b) the payment transactions executed in the last 90 days through one or more designated payment accounts.\n\n2. By way of derogation from paragraph 1, payment service providers shall apply strong customer authentication where one of the following conditions is met:\n\n- (a) the payment service user is accessing online the information specified in paragraph 1 for the first time through the account information service provider;\n\n- (b) more than 180 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1 through the account information service provider and strong customer authentication was applied.\n\n3. By way of derogation from paragraph 1, payment service providers shall be allowed to apply strong customer authentication where a payment service user is accessing its payment account online through an account information service provider and the payment service provider has objectively justified and duly evidenced reasons relating to unauthorised or fraudulent access to the payment account. In such a case, the payment service provider shall document and duly justify to its competent national authority, upon request, the reasons for applying strong customer authentication.\n\n4. Account servicing payment service providers that offer a dedicated interface as referred to in Article 31 shall not be required to implement the exemption laid down in paragraph 1 of this Article for the purpose of the contingency mechanism referred to in Article 33(4), where they do not apply the exemption laid down in Article 10 in the direct interface used for authentication and communication with their payment service users.",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_010",
+            "diff_range": "@@ -234,21 +192,47 @@ _Article 9_",
+            "excerpt": "+## _Article 10a_\n+\n+## **Access to the payment account information through an account information service provider**\n+\n+1. Payment service providers shall not apply strong customer authentication where a payment service user is accessing its payment account online through an account information service provider, provided that access is limited to one of the following items online without disclosure of sensitive payment data:\n+\n+- (a) the balance of one or more designated payment accounts;\n+\n+- (b) the payment transactions executed in the last 90 days through one or more designated payment accounts.\n+\n+2. By way of derogation from paragraph 1, payment service providers shall apply strong customer authentication where one of the following conditions is met:\n+\n+- (a) the payment service user is accessing online the information specified in paragraph 1 for the first time through the account information service provider;\n+\n+- (b) more than 180 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1 through the account information service provider and strong customer authentication was applied.\n+\n+3. By way of derogation from paragraph 1, payment service providers shall be allowed to apply strong customer authentication where a payment service user is accessing its payment account online through an account information service provider and the payment service provider has objectively justified and duly evidenced reasons relating to unauthorised or fraudulent access to the payment account. In such a case, the payment service provider shall document and duly justify to its competent national authority, upon request, the reasons for applying strong customer authentication.\n+\n+4. Account servicing payment service providers that offer a dedicated interface as referred to in Article 31 shall not be required to implement the exemption laid down in paragraph 1 of this Article for the purpose of the contingency mechanism referred to in Article 33(4), where they do not apply the exemption laid down in Article 10 in the direct interface used for authentication and communication with their payment service users."
+          }
+        ]
+      },
+      "location": {
+        "source_location": null,
+        "target_location": "Article 10a(1)-(4)"
+      },
+      "classification": {
+        "scope": "structural_level",
+        "change_operation": "create",
+        "semantic": "obligation_related_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "A new operative Article 10a is inserted with four substantive paragraphs governing a distinct access channel.",
+        "change_operation": "The target introduces a new exemption and related authentication, justification, documentation, and contingency-interface rules absent from the source.",
+        "semantic": "The provision creates duties and permissions concerning strong customer authentication for access through account information service providers, including an exception for objectively justified fraud or unauthorised-access concerns.",
+        "change_nature": "The principal effects are authentication workflow, evidence, documentation, and supervisory justification requirements."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "A new Article 10a establishes strong customer authentication rules for payment-account access through account information service providers, including a limited exemption, mandatory reauthentication after 180 days, a fraud-based override, and related documentation and contingency-interface conditions.",
+      "references": [
+        "Article 10a",
+        "Article 10",
+        "Article 31",
+        "Article 33(4)",
+        "Directive (EU) 2015/2366"
+      ],
+      "notes": null
+    },
+    {
+      "change_id": "change_003_interface_change_deadline",
+      "raw_text": {
+        "source": null,
+        "target": "4a. By way of derogation from paragraph 4, account servicing payment service providers shall make available to the payment service providers referred to in this Article the changes made to the technical specifications of their interfaces in order to comply with Article 10a not less than 2 months before such changes are implemented.",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_026",
+            "diff_range": "@@ -513,16 +512,24 @@ The interface shall at least meet all of the following requirements:",
+            "excerpt": "+## **▼M1**\n+\n+4a. By way of derogation from paragraph 4, account servicing payment service providers shall make available to the payment service providers referred to in this Article the changes made to the technical specifications of their interfaces in order to comply with Article 10a not less than 2 months before such changes are implemented."
+          }
+        ]
+      },
+      "location": {
+        "source_location": null,
+        "target_location": "Article 30(4a)"
+      },
+      "classification": {
+        "scope": "structural_level",
+        "change_operation": "create",
+        "semantic": "temporal_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "The target adds a new paragraph, Article 30(4a), to the existing interface-obligations article.",
+        "change_operation": "The two-month advance-notice rule is newly introduced and has no source counterpart.",
+        "semantic": "The main regulatory effect is a new minimum two-month implementation notice period for interface changes required by Article 10a.",
+        "change_nature": "The provision governs notification and implementation timing for regulated interface changes."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "Account servicing payment service providers must make Article 10a-related interface specification changes available at least two months before implementation.",
+      "references": [
+        "Article 10a",
+        "Article 30(4)",
+        "Article 30(4a)"
+      ],
+      "notes": null
+    }
+  ]
+}

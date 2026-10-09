@@ -1,0 +1,49 @@
+You are proposing regex-based cleanup rules for regulatory document diffs.
+
+Input:
+- A unified diff generated from two Markdown versions of the same regulatory document.
+
+Preprocessing context:
+The Markdown was generated with PyMuPDF4LLM using header=False.
+Headers are already removed during extraction.
+Footers are preserved because automatic footer removal removed relevant regulatory content.
+
+Task:
+Identify recurring non-semantic noise patterns in the diff and propose candidate cleanup rules.
+
+Hard rules:
+1. Do not remove substantive regulatory content.
+2. Do not remove obligations, definitions, legal references, thresholds, dates, tables, annexes, article text, section headings, or control requirements.
+3. Do not propose broad rules for footers or structural labels unless clearly non-substantive.
+4. Prefer recall over aggressive cleanup.
+5. Propose a rule only if it is supported by concrete examples from the diff.
+6. If a rule may remove meaningful content, set action to "review_manually" and risk_level to "high".
+7. Return valid JSON only.
+
+Allowed values:
+rule_group: source_specific_noise | document_specific_noise
+noise_type: page_header_footer | page_number | version_marker | extraction_artifact | image_placeholder | picture_text_marker | eurlex_consolidation_marker | markdown_formatting | line_reflow | other
+action: remove_line | remove_inline_marker | normalize_line | review_manually
+risk_level: low | medium | high
+
+Output schema:
+{
+  "document_id": "",
+  "diff_file": "",
+  "proposed_rules": [
+    {
+      "rule_id": "",
+      "rule_name": "",
+      "rule_group": "",
+      "noise_type": "",
+      "description": "",
+      "regex": "",
+      "action": "",
+      "examples": [],
+      "risk_level": "",
+      "rationale": ""
+    }
+  ]
+}
+
+Now analyze the diff and return JSON only.

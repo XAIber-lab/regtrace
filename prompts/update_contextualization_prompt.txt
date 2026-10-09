@@ -1,0 +1,26 @@
+Propose updates to the supplied cybersecurity contextualization prototype and control catalogue from annotated regulatory changes. Maintain the style and level of detail of the existing workbook rows.
+
+Return only JSON conforming to the supplied schema. Preserve change_ids and return one change_contextualizations item per annotated change. Use only canonical framework IDs from the input. Do not introduce fields or identifiers absent from the schema.
+
+Relevance and evidence
+- Compare source_text and target_text. Act on the changed obligation, not on unchanged duties, terminology substitutions, headings or general catalogue improvements.
+- Require an explicit ICT, cybersecurity, payment-security, resilience or privacy connection. General governance or reporting alone is insufficient. Non-relevant changes have Non applicabile class/priority and empty mappings/actions. A relevant change may also have empty mappings/actions when no supported update is needed.
+- Preserve the actual actor, scope, trigger, deadline and exceptions. Distinguish an applicant's duty to document a measure from an institution's duty to perform it. A removed obligation or exemption does not create a new prohibition.
+- Use only supplied evidence. Do not reconstruct obligations from a cited instrument's title or assume unspecified implementation details. Use review_needed when unresolved applicability or insufficient evidence affects a plausible target supported by the supplied rows. Otherwise, leave the corresponding action array empty.
+- For every substantive action, use the rationale to identify the changed requirement, explain the target and action choice, and point to a supporting location or passage present in the supplied evidence.
+- Match framework activities and purposes, not shared words. Keep action mapping strengths aligned with their supporting framework mappings; explain stronger or materially different mappings.
+
+Choose the existing target first
+- Read the supplied rows before proposing an action. Matching framework IDs alone does not mean that two controls address the same duty.
+- modify: the target addresses the same underlying obligation and sufficiently aligned scope. Make the smallest supported edit, returning the full control text with unaffected wording and duties preserved. Do not rewrite an adequate control to improve its style or narrow a general control to one regulated subset.
+- new: a distinct changed duty is absent from the supplied controls and cannot be incorporated through a minimal edit. Explain briefly why existing controls do not cover it. Do not add a generic compliance statement or duplicate an existing duty under another framework mapping.
+- no_change: the existing wording already covers the requirement. Reference-only changes retain existing wording and do not justify new operational controls. deprecate requires explicit removal or supersession and human review.
+- Copy prototype row numbers from contextualization_prototype_rows with the same subcategory_id. Copy control row numbers and IDs from the same existing_control_rows item; its mappings must overlap the proposed mappings. New controls have null target row and ID. Never use framework_core row numbers as prototype targets.
+- Consolidate compatible changes to the same row under the earliest contributing change_id and explain the other links in notes. Preserve applicable existing references; add supported pinpoints in reference fields.
+
+Workbook wording
+- Write newly generated workbook-facing content in task.language. Copy canonical framework/prototype descriptions and preserved control wording verbatim, even when they are written in another language. Put regulatory explanations in rationale, not in the description.
+- For a new control, use comparable supplied controls as examples of phrasing, terminology and typical length, without copying their unrelated duties. Write a direct, prescriptive, verifiable sentence, normally one duty per control. Add a second short sentence only when a material condition requires it.
+- Do not put background, change summaries, article quotations, implementation recommendations, invented procedures or frequencies in control_text. Keep material legal conditions; concise wording must not change their meaning. Place citations, evidence, target justification and uncertainty in references, rationale or notes.
+- Preserve existing target class, priority, owner and mappings where provided and still applicable. Assign new metadata only when supported; binding status alone does not establish priority. Use Da verificare for unresolved permitted values and delegated_to: null for an unsupported owner.
+- Keep absent prototype/control inputs and unsupported action arrays empty. All proposals remain subject to human review.

@@ -1,0 +1,30 @@
+{
+  "provider": "openai",
+  "endpoint": "responses.create",
+  "requested_model": "gpt-5.6-sol",
+  "returned_model": "gpt-5.6-sol",
+  "response_id": "resp_002037fa67d4b544006ac253fb433c87d1b8b3836e0f9e636e",
+  "status": "completed",
+  "created_at": 1791120379.0,
+  "reasoning_effort_requested": "medium",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": null,
+    "mode": "standard"
+  },
+  "max_output_tokens_requested": 20000,
+  "usage": {
+    "input_tokens": 63464,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 63461
+    },
+    "output_tokens": 2490,
+    "output_tokens_details": {
+      "reasoning_tokens": 1552
+    },
+    "total_tokens": 65954
+  }
+}

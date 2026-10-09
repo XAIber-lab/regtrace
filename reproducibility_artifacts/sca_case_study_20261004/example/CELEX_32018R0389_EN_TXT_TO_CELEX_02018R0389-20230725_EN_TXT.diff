@@ -1,0 +1,673 @@
+diff --git a/CELEX_32018R0389_EN_TXT.md b/CELEX_02018R0389-20230725_EN_TXT.md
+index d733267..645bf85 100644
+--- a/CELEX_32018R0389_EN_TXT.md
++++ b/CELEX_02018R0389-20230725_EN_TXT.md
+
+[HUNK hunk_001]
+@@ -1,4 +1,6 @@
+-## **COMMISSION DELEGATED REGULATION (EU) 2018/389**
++**This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the relevant acts, including their preambles, are those published in the Official Journal of the European Union and available in EUR-Lex. Those official texts are directly accessible through the links embedded in this document**
++
++**►B COMMISSION DELEGATED REGULATION (EU) 2018/389**
+ 
+ ## **of 27 November 2017**
+ 
+
+[HUNK hunk_002]
+@@ -6,77 +8,26 @@
+ 
+ **(Text with EEA relevance)**
+ 
+-THE EUROPEAN COMMISSION,
+-
+-Having regard to the Treaty on the Functioning of the European Union,
+-
+-Having regard to Directive (EU) 2015/2366 of the European Parliament and of the Council of 25 November 2015 on payment services in the internal market, amending Directives 2002/65/EC, 2009/110/EC and 2013/36/EU and Regulation (EU) No 1093/2010, and repealing Directive 2007/64/EC ([1] ), and in particular the second subparagraph of Article 98(4) thereof,
+-
+-Whereas:
+-
+-- (1) Payment services offered electronically should be carried out in a secure manner, adopting technologies able to guarantee the safe authentication of the user and to reduce, to the maximum extent possible, the risk of fraud. The authentication procedure should include, in general, transaction monitoring mechanisms to detect attempts to use a payment service user's personalised security credentials that were lost, stolen, or misappropriated and should also ensure that the payment service user is the legitimate user and therefore is giving consent for the transfer of funds and access to its account information through a normal use of the personalised security credentials. Furthermore, it is necessary to specify the requirements of the strong customer authentication that should be applied each time a payer accesses its payment account online, initiates an electronic payment transaction or carries out any action through a remote channel which may imply a risk of payment fraud or other abuse, by requiring the generation of an authentication code which should be resistant against the risk of being forged in its entirety or by disclosure of any of the elements upon which the code was generated.
+-
+-- (2) As fraud methods are constantly changing, the requirements of strong customer authentication should allow for innovation in the technical solutions addressing the emergence of new threats to the security of electronic payments. To ensure that the requirements to be laid down are effectively implemented on a continuous basis, it is also appropriate to require that the security measures for the application of strong customer authentication and its exemptions, the measures to protect confidentiality and integrity of the personalised security credentials, and the measures establishing common and secure open standards of communication are documented, periodically tested, evaluated and audited by auditors with expertise in IT security and payments and operationally independent. In order to allow competent authorities to monitor the quality of the review of these measures, such reviews should be made available to them upon their request.
+-
+-- (3) As electronic remote payment transactions are subject to a higher risk of fraud, it is necessary to introduce additional requirements for the strong customer authentication of such transactions, ensuring that the elements dynamically link the transaction to an amount and a payee specified by the payer when initiating the transaction.
+-
+-- (4) Dynamic linking is possible through the generation of authentication codes which is subject to a set of strict security requirements. To remain technologically neutral a specific technology for the implementation of authentication codes should not be required. Therefore authentication codes should be based on solutions such as generating and validating one-time passwords, digital signatures or other cryptographically underpinned validity assertions using keys or cryptographic material stored in the authentication elements, as long as the security requirements are fulfilled.
+-
+-([1] ) OJ L 337, 23.12.2015, p. 35.
+-- (5) It is necessary to lay down specific requirements for the situation where the final amount is not known at the moment the payer initiates an electronic remote payment transaction, in order to ensure that the strong customer authentication is specific to the maximum amount that the payer has given consent for as referred to in Directive (EU) 2015/2366.
+-
+-- (6) In order to ensure the application of strong customer authentication, it is also necessary to require adequate security features for the elements of strong customer authentication categorised as ‘knowledge’ (something only the user knows), such as length or complexity, for the elements categorised as ‘possession’ (something only the user possesses), such as algorithm specifications, key length and information entropy, and for the devices and software that read elements categorised as ‘inherence’ (something the user is) such as algorithm specifications, biometric sensor and template protection features, in particular to mitigate the risk that those elements are uncovered, disclosed to and used by unauthorised parties. It is also necessary to lay down the requirements to ensure that those elements are independent, so that the breach of one does not compromise the reliability of the others, in particular when any of these elements are used through a multi-purpose device,namely a device such as a tablet or a mobile phone which can be used both for giving the instruction to make the payment and in the authentication process.
+-
+-- (7) The requirements of strong customer authentication apply to payments initiated by the payer, regardless of whether the payer is a natural person or a legal entity.
+-
+-- (8) Due to their very nature, payments made through the use of an anonymous payment instruments are not subject to the obligation of strong customer authentication. Where the anonymity of such instruments is lifted on contractual or legislative grounds, payments are subject to the security requirements that follow from Directive (EU) 2015/2366 and this Regulatory Technical Standard.
+-
+-- (9) In accordance with Directive (EU) 2015/2366, exemptions to the principle of strong customer authentication have been defined based on the level of risk, amount, recurrence and the payment channel used for the execution of the payment transaction.
+-
+-- (10) Actions which imply access to the balance and the recent transactions of a payment account without disclosure of sensitive payment data, recurring payments to the same payees which have been previously set up or confirmed by the payer through the use of strong customer authentication, and payments to and from the same natural or legal person with accounts with the same payment service provider, pose a low level of risk, thus allowing payment service providers not to apply strong customer authentication. This leaves aside that in accordance with Articles 65, 66 and 67 Directive (EU) 2015/2366, payment initiation service providers, payment service providers issuing card-based payment instruments and account information service providers should only seek and obtain the necessary and essential information from the account servicing payment service provider for the provision of a given payment service with the consent of the payment service user. Such consent can be given individually for each request of information or for each payment to be initiated or, for account information service providers, as a mandate for designated payment accounts and associated payment transactions as established in the contractual agreement with the payment service user.
+-
+-- (11) Exemptions for low-value contactless payments at points of sale, which also take into account a maximum number of consecutive transactions or a certain fixed maximum value of consecutive transactions without applying strong customer authentication, allow for the development of user-friendly and low-risk payment services and should therefore be provided for. It is also appropriate to establish an exemption for the case of electronic payment transactions initiated at unattended terminals where the use of strong customer authentication may not always be easy to apply due to operational reasons (e.g. to avoid queues and potential accidents at toll gates or for other safety or security risks).
++(OJ L 69, 13.3.2018, p. 23)
+ 
+-- (12) Similar to the exemption for low-value contactless payments at the point of sale, a proper balance needs to be struck between the interest in enhanced security in remote payments and the needs of user-friendliness and accessibility of payments in the area of e-commerce. In line with those principles, thresholds below which no strong customer authentication needs to be applied should be set in a prudent manner, to cover only online purchases of low value. The thresholds for online purchases should be set more prudently, considering that the fact that the person is not physically present when making the purchase is posing a slightly higher security risk.
+-- (13) The requirements of strong customer authentication apply to payments initiated by the payer, regardless of whether the payer is a natural person or a legal entity. Many corporate payments are initiated through dedicated processes or protocols which guarantee the high levels of payment security that Directive (EU) 2015/2366 aims to achieve through strong customer authentication. Where the competent authorities establish that those payment processes and protocols that are only made available to payers who are not consumers achieve the objectives of Directive (EU) 2015/2366 in terms of security, payment service providers may, in relation to those processes or protocols, be exempted from the strong customer authentication requirements.
++Amended by:
+ 
+-- (14) In the case of real-time transaction risk analysis that categorise a payment transaction as low risk, it is also appropriate to introduce an exemption for the payment service provider that intends not to apply strong customer authentication through the adoption of effective and risk-based requirements which ensure the safety of the payment service user's funds and personal data. Those risk-based requirements should combine the scores of the risk analysis, confirming that no abnormal spending or behavioural pattern of the payer has been identified, taking into account other risk factors including information on the location of the payer and of the payee with monetary thresholds based on fraud rates calculated for remote payments. Where, on the basis of the real-time transaction risk analysis, a payment cannot be qualified as posing a low level of risk, the payment service provider should revert to strong customer authentication. The maximum value of such risk-based exemption should be set in a manner ensuring a very low corresponding fraud rate, also by comparison to the fraud rates of all the payment transactions of the payment service provider, including those authenticated through strong customer authentication, within a certain period of time and on a rolling basis.
++Official Journal
+ 
+-- (15) For the purpose of ensuring an effective enforcement, payment service providers that wish to benefit from the exemptions from strong customer authentication should regularly monitor and make available to competent authorities and to the European Banking Authority (EBA), upon their request, for each payment transaction type, the value of fraudulent or unauthorised payment transactions and the observed fraud rates for all their payment transactions, whether authenticated through strong customer authentication or executed under a relevant exemption.
++► **M1** Commission Delegated Regulation (EU) 2022/2360 of 3 August 2022
+ 
+-- (16) The collection of this new historical evidence on the fraud rates of electronic payment transactions will also contribute to an effective review by the EBA of the thresholds for an exemption to strong customer authentication based on a real-time transaction risk analysis. The EBA should review and submit draft updates to the Commission of these regulatory technical standards, where appropriate, by submitting new draft thresholds and corresponding fraud rates with the aim of enhancing the security of remote electronic payments, in accordance with Article 98(5) of Directive (EU) 2015/2366 and with Article 10 of Regulation (EU) No 1093/2010 of the European Parliament and of the Council ([1] ).
++No page date 1 5.12.2022
+ 
+-- (17) Payment service providers that make use of any of the exemptions to be provided for should be allowed at any time to choose to apply strong customer authentication to the actions and to the payment transactions referred to in those provisions.
++L 312
++## **▼B**
+ 
+-- (18) The measures that protect the confidentiality and integrity of personalised security credentials, as well as authentication devices and software, should limit the risks relating to fraud through unauthorised or fraudulent use of payment instruments and unauthorised access to payment accounts. To this end it is necessary to introduce requirements on the secure creation and delivery of the personalised security credentials and their association with the payment service user, and to provide conditions for the renewal and deactivation of those credentials.
+-
+-- (19) In order to ensure effective and secure communication between the relevant actors in the context of account information services, payment initiation services and confirmation on the availabilty of funds, it is necessary to specify the requirements of common and secure open standards of communication to be met by all relevant payment service providers. Directive (EU) 2015/2366 provides for the access and use of payment account information by account information service providers. This regulation therefore does not change the rules of access to accounts other than payment accounts.
+-
+-- ([1] ) Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European Supervisory Authority (European Banking Authority), amending Decision No 716/2009/EC and repealing Commission Decision 2009/78/EC (OJ L 331, 15.12.2010, p. 12).
+-- (20) Each account servicing payment service provider with payment accounts that are accessible online should offer at least one access interface enabling secure communication with account information service providers, payment initiation service providers and payment service providers issuing card-based payment instruments. The interface should enable the account information service providers, payment initiation service providers and payment service providers issuing card-based payment instruments to identify themselves to the account servicing payment service provider. It should also allow account information service providers and payment initiation service providers to rely on the authentication procedures provided by the account servicing payment service provider to the payment service user. To ensure technology and business-model neutrality, the account servicing payment service providers should be free to decide whether to offer an interface that is dedicated to the communication with account information service providers, payment initiation service providers, and payment service providers issuing card-based payment instruments, or to allow, for that communication, the use of the interface for the identification and communication with the account servicing payment service providers' payment service users.
+-
+-- (21) In order to allow account information service providers, payment initiation service providers, and payment service providers issuing card-based payment instruments to develop their technical solutions, the technical specification of the interface should be adequately documented and made publicly available. Moreover, the account servicing payment service provider should offer a facility enabling the payment service providers to test the technical solutions at least 6 months prior to the application date of these regulatory standards or, if the launch takes place after the application date of these standards, prior to the date on which the interface will be launched to the market. To ensure the interoperability of different technological communication solutions, the interface should use standards of communication which are developed by international or European standardisation organisations.
+-
+-- (22) The quality of the services provided by account information service providers and payment initiation service providers will be dependent on the proper functioning of the interfaces put in place or adapted by account servicing payment service providers. It is therefore important that in case of non-compliance of such interfaces with the provisions included in these standards, measures are taken to guarantee business continuity for the benefit of the users of those services. It is the responsibility of national competent authorities to ensure that account information service providers and payment intitation service providers are not blocked or obstructed in the provision of their services.
+-
+-- (23) Where access to payment accounts is offered by means of a dedicated interface, in order to ensure the right of payment service users to make use of payment initiation service providers and of services enabling access to account information, as provided for in Directive (EU) 2015/2366, it is necessary to require that dedicated interfaces have the same level of availability and performance as the interface available to the payment service user. Account servicing payment service providers should also define transparent key performance indicators and service level targets for the availability and performance of dedicated interfaces that are at least as stringent as those for the interface used for their payment service users. Those interfaces should be tested by the payment service providers who will use them, and should be stress-tested and monitored by competent authorities.
+-
+-- (24) To ensure that payment service providers who rely on the dedicated interface can continue to provide their services in case of problems of availability or inadequate performance, it is necessary to provide, subject to strict conditions, a fallback mechanism that will allow such providers to use the interface that the account servicing payment service provider maintains for the identification of, and communication with, its own payment service users. Certain account servicing payment service providers will be exempted from having to provide such a fallback mechanism through their customer facing interfaces where their competent authorities establish that the dedicated interfaces comply with specific conditions that ensure unhampered competition. In the event that the exempted dedicated interfaces fail to comply with the required conditions, the granted exemptions shall be revoked by the relevant competent authorities.
+-
+-- (25) In order to allow competent authorities to effectively supervise and monitor the implementation and management of the communication interfaces, the account servicing payment service providers should make a summary of the relevant documentation available on their website, and provide, upon request, the competent authorities with documentation of the solutions in case of emergencies. The account servicing payment service providers should also make publicly available the statistics on the availability and performance of that interface.
+-
+-- (26) In order to safeguard the confidentiality and the integrity of data, it is necessary to ensure the security of communication sessions between account servicing payment service providers, account information service providers, payment initiation service providers and payment service providers issuing card-based payment
+-instruments. It is in particular necessary to require that secure encryption is applied between account information service providers, payment initiation service providers, payment service providers issuing card-based payment instruments and account servicing payment service providers when exchanging data.
+-
+-- (27) To improve user confidence and ensure strong customer authentication, the use of electronic identification means and trust services as set out in Regulation (EU) No 910/2014 of the European Parliament and of the Council ([1] ) should be taken into account, in particular with regard to notified electronic identification schemes
+-
+-- (28) In order to ensure aligned application dates, this Regulation should be applicable from the same date as of which Member States have to ensure application of the security measures referred to in Articles 65, 66, 67 and 97 of Directive (EU) 2015/2366.
++## **COMMISSION DELEGATED REGULATION (EU) 2018/389**
+ 
+-- (29) This Regulation is based on the draft regulatory technical standards submitted by the European Banking Authority (EBA) to the Commission.
++## **of 27 November 2017**
+ 
+-- (30) EBA has conducted open and transparent public consultations on the draft regulatory technical standards on which this Regulation is based, analysed the potential related costs and benefits and requested the opinion of the Banking Stakeholder Group established in accordance with Article 37 of Regulation (EU) No 1093/2010,
++**supplementing Directive (EU) 2015/2366 of the European Parliament and of the Council with regard to regulatory technical standards for strong customer authentication and common and secure open standards of communication**
+ 
+-HAS ADOPTED THIS REGULATION:
++**(Text with EEA relevance)**
+ 
+ ## CHAPTER I
+ 
+
+[HUNK hunk_003]
+@@ -84,7 +35,7 @@ HAS ADOPTED THIS REGULATION:
+ 
+ ## _Article 1_
+ 
+-## **Subject matter**
++**Subject matter**
+ 
+ This Regulation establishes the requirements to be complied with by payment service providers for the purpose of implementing security measures which enable them to do the following:
+ 
+
+[HUNK hunk_004]
+@@ -96,14 +47,14 @@ This Regulation establishes the requirements to be complied with by payment serv
+ 
+ - (d) establish common and secure open standards for the communication between account servicing payment service providers, payment initiation service providers, account information service providers, payers, payees and other payment service providers in relation to the provision and use of payment services in application of Title IV of Directive (EU) 2015/2366.
+ 
+-_Article 2_
++## _Article 2_
+ 
+ ## **General authentication requirements**
+ 
+ 1. Payment service providers shall have transaction monitoring mechanisms in place that enable them to detect unauthorised or fraudulent payment transactions for the purpose of the implementation of the security measures referred to in points (a) and (b) of Article 1.
+ 
+-> ([1] ) Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC (OJ L 257, 28.8.2014, p. 53).
+ Those mechanisms shall be based on the analysis of payment transactions taking into account elements which are typical of the payment service user in the circumstances of a normal use of the personalised security credentials.
++## **▼B**
+ 
+ 2. Payment service providers shall ensure that the transaction monitoring mechanisms take into account, at a minimum, each of the following risk-based factors:
+ 
+
+[HUNK hunk_005]
+@@ -130,18 +81,20 @@ However, payment service providers that make use of the exemption referred to in
+ 3. This audit shall present an evaluation and report on the compliance of the payment service provider's security measures with the requirements set out in this Regulation.
+ 
+ The entire report shall be made available to competent authorities upon their request.
++## **▼B**
+ 
+ ## CHAPTER II
+ 
+ ## **SECURITY MEASURES FOR THE APPLICATION OF STRONG CUSTOMER AUTHENTICATION**
+ 
+-_Article 4_
++## _Article 4_
+ 
+ ## **Authentication code**
+ 
+ 1. Where payment service providers apply strong customer authentication in accordance with Article 97(1) of Directive (EU) 2015/2366, the authentication shall be based on two or more elements which are categorised as knowledge, possession and inherence and shall result in the generation of an authentication code.
+ 
+ The authentication code shall be only accepted once by the payment service provider when the payer uses the authentication code to access its payment account online, to initiate an electronic payment transaction or to carry out any action through a remote channel which may imply a risk of payment fraud or other abuses.
++
+ 2. For the purpose of paragraph 1, payment service providers shall adopt security measures ensuring that each of the following requirements is met:
+ 
+ - (a) no information on any of the elements referred to in paragraph 1 can be derived from the disclosure of the authentication code;
+
+[HUNK hunk_006]
+@@ -157,6 +110,7 @@ The authentication code shall be only accepted once by the payment service provi
+ - (b) the number of failed authentication attempts that can take place consecutively, after which the actions referred to in Article 97(1) of Directive (EU) 2015/2366 shall be temporarily or permanently blocked, shall not exceed five within a given period of time;
+ 
+ - (c) the communication sessions are protected against the capture of authentication data transmitted during the authentication and against manipulation by unauthorised parties in accordance with the requirements in Chapter V;
++## **▼B**
+ 
+ - (d) the maximum time without activity by the payer after being authenticated for accessing its payment account online shall not exceed 5 minutes.
+ 
+
+[HUNK hunk_007]
+@@ -185,13 +139,15 @@ Where the block has been made permanent, a secure procedure shall be established
+ - (a) the amount of the transaction and the payee throughout all of the phases of the authentication;
+ 
+ - (b) the information displayed to the payer throughout all of the phases of the authentication including the generation, transmission and use of the authentication code.
++
+ 3. For the purpose of paragraph 1(b) and where payment service providers apply strong customer authentication in accordance with Article 97(2) of Directive (EU) 2015/2366 the following requirements for the authentication code shall apply:
++## **▼B**
+ 
+ - (a) in relation to a card-based payment transaction for which the payer has given consent to the exact amount of the funds to be blocked pursuant to Article 75(1) of that Directive, the authentication code shall be specific to the amount that the payer has given consent to be blocked and agreed to by the payer when initiating the transaction;
+ 
+ - (b) in relation to payment transactions for which the payer has given consent to execute a batch of remote electronic payment transactions to one or several payees, the authentication code shall be specific to the total amount of the batch of payment transactions and to the specified payees.
+ 
+-_Article 6_
++## _Article 6_
+ 
+ ## **Requirements of the elements categorised as knowledge**
+ 
+
+[HUNK hunk_008]
+@@ -199,7 +155,7 @@ _Article 6_
+ 
+ 2. The use by the payer of those elements shall be subject to mitigation measures in order to prevent their disclosure to unauthorised parties.
+ 
+-_Article 7_
++## _Article 7_
+ 
+ ## **Requirements of the elements categorised as possession**
+ 
+
+[HUNK hunk_009]
+@@ -207,21 +163,23 @@ _Article 7_
+ 
+ 2. The use by the payer of those elements shall be subject to measures designed to prevent replication of the elements.
+ 
+-_Article 8_
++## _Article 8_
+ 
+ ## **Requirements of devices and software linked to elements categorised as inherence**
+ 
+ 1. Payment service providers shall adopt measures to mitigate the risk that the authentication elements categorised as inherence and read by access devices and software provided to the payer are uncovered by unauthorised parties. At a minimum, the payment service providers shall ensure that those access devices and software have a very low probability of an unauthorised party being authenticated as the payer.
+ 
+ 2. The use by the payer of those elements shall be subject to measures ensuring that those devices and the software guarantee resistance against unauthorised use of the elements through access to the devices and the software.
++## **▼B**
+ 
+-_Article 9_
++## _Article 9_
+ 
+ ## **Independence of the elements**
+ 
+ 1. Payment service providers shall ensure that the use of the elements of strong customer authentication referred to in Articles 6, 7 and 8 is subject to measures which ensure that, in terms of technology, algorithms and parameters, the breach of one of the elements does not compromise the reliability of the other elements.
+ 
+ 2. Payment service providers shall adopt security measures, where any of the elements of strong customer authentication or the authentication code itself is used through a multi-purpose device, to mitigate the risk which would result from that multi-purpose device being compromised.
++
+ 3. For the purposes of paragraph 2, the mitigating measures shall include each of the following:
+ 
+ - (a) the use of separated secure execution environments through the software installed inside the multi-purpose device;
+
+[HUNK hunk_010]
+@@ -234,21 +192,47 @@ _Article 9_
+ 
+ ## **EXEMPTIONS FROM STRONG CUSTOMER AUTHENTICATION**
+ 
++## **▼M1**
++
+ ## _Article 10_
+ 
+-## **Payment account information**
++## **Access to the payment account information directly with the account servicing payment service provider**
+ 
+-1. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2 and to paragraph 2 of this Article and, where a payment service user is limited to accessing either or both of the following items online without disclosure of sensitive payment data:
++1. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2, where a payment service user is accessing its payment account online directly, provided that access is limited to one of the following items online without disclosure of sensitive payment data:
+ 
+ - (a) the balance of one or more designated payment accounts;
+ 
+ - (b) the payment transactions executed in the last 90 days through one or more designated payment accounts.
+ 
+-2. For the purpose of paragraph 1, payment service providers shall not be exempted from the application of strong customer authentication where either of the following condition is met:
++2. By way of derogation from paragraph 1, payment service providers shall not be exempted from the application of strong customer authentication where one of the following conditions is met:
++## **▼M1**
+ 
+ - (a) the payment service user is accessing online the information specified in paragraph 1 for the first time;
+ 
+-- (b) more than 90 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1(b) and strong customer authentication was applied.
++- (b) more than 180 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1 and strong customer authentication was applied.
++
++## _Article 10a_
++
++## **Access to the payment account information through an account information service provider**
++
++1. Payment service providers shall not apply strong customer authentication where a payment service user is accessing its payment account online through an account information service provider, provided that access is limited to one of the following items online without disclosure of sensitive payment data:
++
++- (a) the balance of one or more designated payment accounts;
++
++- (b) the payment transactions executed in the last 90 days through one or more designated payment accounts.
++
++2. By way of derogation from paragraph 1, payment service providers shall apply strong customer authentication where one of the following conditions is met:
++
++- (a) the payment service user is accessing online the information specified in paragraph 1 for the first time through the account information service provider;
++
++- (b) more than 180 days have elapsed since the last time the payment service user accessed online the information specified in paragraph 1 through the account information service provider and strong customer authentication was applied.
++
++3. By way of derogation from paragraph 1, payment service providers shall be allowed to apply strong customer authentication where a payment service user is accessing its payment account online through an account information service provider and the payment service provider has objectively justified and duly evidenced reasons relating to unauthorised or fraudulent access to the payment account. In such a case, the payment service provider shall document and duly justify to its competent national authority, upon request, the reasons for applying strong customer authentication.
++## **▼M1**
++
++4. Account servicing payment service providers that offer a dedicated interface as referred to in Article 31 shall not be required to implement the exemption laid down in paragraph 1 of this Article for the purpose of the contingency mechanism referred to in Article 33(4), where they do not apply the exemption laid down in Article 10 in the direct interface used for authentication and communication with their payment service users.
++
++## **▼B**
+ 
+ ## _Article 11_
+ 
+
+[HUNK hunk_011]
+@@ -267,15 +251,17 @@ Payment service providers shall be allowed not to apply strong customer authenti
+ ## **Unattended terminals for transport fares and parking fees**
+ 
+ Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the requirements laid down in Article 2, where the payer initiates an electronic payment transaction at an unattended payment terminal for the purpose of paying a transport fare or a parking fee.
+-_Article 13_
++
++## _Article 13_
+ 
+ ## **Trusted beneficiaries**
+ 
+ 1. Payment service providers shall apply strong customer authentication where a payer creates or amends a list of trusted beneficiaries through the payer's account servicing payment service provider.
+ 
+ 2. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the general authentication requirements, where the payer initiates a payment transaction and the payee is included in a list of trusted beneficiaries previously created by the payer.
++## **▼B**
+ 
+-_Article 14_
++## _Article 14_
+ 
+ ## **Recurring transactions**
+ 
+
+[HUNK hunk_012]
+@@ -283,7 +269,7 @@ _Article 14_
+ 
+ 2. Payment service providers shall be allowed not to apply strong customer authentication, subject to compliance with the general authentication requirements, for the initiation of all subsequent payment transactions included in the series of payment transactions referred to in paragraph 1.
+ 
+-_Article 15_
++## _Article 15_
+ 
+ ## **Credit transfers between accounts held by the same natural or legal person**
+ 
+
+[HUNK hunk_013]
+@@ -295,17 +281,20 @@ Payment service providers shall be allowed not to apply strong customer authenti
+ 
+ Payment service providers shall be allowed not to apply strong customer authentication, where the payer initiates a remote electronic payment transaction provided that the following conditions are met:
+ 
+-(a) the amount of the remote electronic payment transaction does not exceed EUR 30; and
++- (a) the amount of the remote electronic payment transaction does not exceed EUR 30; and
+ 
+ - (b) the cumulative amount of previous remote electronic payment transactions initiated by the payer since the last application of strong customer authentication does not exceed EUR 100; or
+ 
+ - (c) the number of previous remote electronic payment transactions initiated by the payer since the last application of strong customer authentication does not exceed five consecutive individual remote electronic payment transactions.
+ 
+-_Article 17_
++## _Article 17_
+ 
+ ## **Secure corporate payment processes and protocols**
+ 
+-Payment service providers shall be allowed not to apply strong customer authentication, in respect of legal persons initiating electronic payment transactions through the use of dedicated payment processes or protocols that are only made available to payers who are not consumers, where the competent authorities are satisfied that those processes or protocols guarantee at least equivalent levels of security to those provided for by Directive (EU) 2015/2366.
++Payment service providers shall be allowed not to apply strong customer authentication, in respect of legal persons initiating electronic payment transactions through the use of dedicated payment processes or protocols that are only made available to payers who are not consumers,
++## **▼B**
++ where the competent authorities are satisfied that those processes or protocols guarantee at least equivalent levels of security to those provided for by Directive (EU) 2015/2366.
++
+ ## _Article 18_
+ 
+ ## **Transaction risk analysis**
+
+[HUNK hunk_014]
+@@ -337,6 +326,7 @@ Payment service providers shall be allowed not to apply strong customer authenti
+ - (a) the previous spending patterns of the individual payment service user;
+ 
+ - (b) the payment transaction history of each of the payment service provider's payment service users;
++## **▼B**
+ 
+ - (c) the location of the payer and of the payee at the time of the payment transaction in cases where the access device or the software is provided by the payment service provider;
+ 
+
+[HUNK hunk_015]
+@@ -344,13 +334,14 @@ Payment service providers shall be allowed not to apply strong customer authenti
+ 
+ The assessment made by a payment service provider shall combine all those risk-based factors into a risk scoring for each individual transaction to determine whether a specific payment should be allowed without strong customer authentication.
+ 
+-_Article 19_
++## _Article 19_
+ 
+ ## **Calculation of fraud rates**
+ 
+ 1. For each type of transaction referred to in the table set out in the Annex, the payment service provider shall ensure that the overall fraud rates covering both payment transactions authenticated through strong customer authentication and those executed under any of the exemptions referred to in Articles 13 to 18 are equivalent to, or lower than, the reference fraud rate for the same type of payment transaction indicated in the table set out in the Annex.
+ 
+ The overall fraud rate for each type of transaction shall be calculated as the total value of unauthorised or fraudulent remote transactions, whether the funds have been recovered or not, divided by the total value of all remote transactions for the same type of transactions, whether authenticated with the application of strong customer authentication or executed under any exemption referred to in Articles 13 to 18 on a rolling quarterly basis (90 days).
++
+ 2. The calculation of the fraud rates and resulting figures shall be assessed by the audit review referred to in Article 3(2), which shall ensure that they are complete and accurate.
+ 
+ 3. The methodology and any model, used by the payment service provider to calculate the fraud rates, as well as the fraud rates themselves, shall be adequately documented and made fully available to competent authorities and to EBA, with prior notification to the relevant competent authority(ies), upon their request.
+
+[HUNK hunk_016]
+@@ -360,6 +351,7 @@ The overall fraud rate for each type of transaction shall be calculated as the t
+ ## **Cessation of exemptions based on transaction risk analysis**
+ 
+ 1. Payment service providers that make use of the exemption referred to in Article 18 shall immediately report to the competent authorities where one of their monitored fraud rates, for any type of payment transactions indicated in the table set out in the Annex, exceeds the applicable reference fraud rate and shall provide to the competent authorities a description of the measures that they intend to adopt to restore compliance of their monitored fraud rate with the applicable reference fraud rates.
++## **▼B**
+ 
+ 2. Payment service providers shall immediately cease to make use of the exemption referred to in Article 18 for any type of payment transactions indicated in the table set out in the Annex in the specific exemption threshold range where their monitored fraud rate exceeds for two consecutive quarters the reference fraud rate applicable for that payment instrument or type of payment transaction in that exemption threshold range.
+ 
+
+[HUNK hunk_017]
+@@ -367,7 +359,7 @@ The overall fraud rate for each type of transaction shall be calculated as the t
+ 
+ 4. Where payment service providers intend to make use again of the exemption referred to in Article 18, they shall notify the competent authorities in a reasonable timeframe and shall before making use again of the exemption, provide evidence of the restoration of compliance of their monitored fraud rate with the applicable reference fraud rate for that exemption threshold range in accordance with paragraph 3 of this Article.
+ 
+-_Article 21_
++## _Article 21_
+ 
+ ## **Monitoring**
+ 
+
+[HUNK hunk_018]
+@@ -380,16 +372,18 @@ _Article 21_
+ - (c) the number of payment transactions where each of the exemptions was applied and their percentage in respect of the total number of payment transactions.
+ 
+ 2. Payment service providers shall make the results of the monitoring in accordance with paragraph 1 available to competent authorities and to EBA, with prior notification to the relevant competent authority(ies), upon their request.
++## **▼B**
+ 
+ ## CHAPTER IV
+ 
+ ## **CONFIDENTIALITY AND INTEGRITY OF THE PAYMENT SERVICE USERS' PERSONALISED SECURITY CREDENTIALS**
+ 
+-_Article 22_
++## _Article 22_
+ 
+ ## **General requirements**
+ 
+ 1. Payment service providers shall ensure the confidentiality and integrity of the personalised security credentials of the payment service user, including authentication codes, during all phases of the authentication.
++
+ 2. For the purpose of paragraph 1, payment service providers shall ensure that each of the following requirements is met:
+ 
+ - (a) personalised security credentials are masked when displayed and are not readable in their full extent when input by the payment service user during the authentication;
+
+[HUNK hunk_019]
+@@ -402,7 +396,7 @@ _Article 22_
+ 
+ 4. Payment service providers shall ensure that the processing and routing of personalised security credentials and of the authentication codes generated in accordance with Chapter II take place in secure environments in accordance with strong and widely recognised industry standards.
+ 
+-_Article 23_
++## _Article 23_
+ 
+ ## **Creation and transmission of credentials**
+ 
+
+[HUNK hunk_020]
+@@ -410,11 +404,12 @@ Payment service providers shall ensure that the creation of personalised securit
+ 
+ They shall mitigate the risks of unauthorised use of the personalised security credentials and of the authentication devices and software following their loss, theft or copying before their delivery to the payer.
+ 
+-_Article 24_
++## _Article 24_
+ 
+ ## **Association with the payment service user**
+ 
+ 1. Payment service providers shall ensure that only the payment service user is associated, in a secure manner, with the personalised security credentials, the authentication devices and the software.
++## **▼B**
+ 
+ 2. For the purpose of paragraph 1, payment service providers shall ensure that each of the following requirements is met:
+ 
+
+[HUNK hunk_021]
+@@ -422,11 +417,12 @@ _Article 24_
+ 
+ - (b) the association by means of a remote channel of the payment service user's identity with the personalised security credentials and with authentication devices or software is performed using strong customer authentication.
+ 
+-_Article 25_
++## _Article 25_
+ 
+ ## **Delivery of credentials, authentication devices and software**
+ 
+ 1. Payment service providers shall ensure that the delivery of personalised security credentials, authentication devices and software to the payment service user is carried out in a secure manner designed to address the risks related to their unauthorised use due to their loss, theft or copying.
++
+ 2. For the purpose of paragraph 1, payment service providers shall at least apply each of the following measures:
+ 
+ - (a) effective and secure delivery mechanisms ensuring that the personalised security credentials, authentication devices and software are delivered to the legitimate payment service user;
+
+[HUNK hunk_022]
+@@ -438,6 +434,7 @@ _Article 25_
+    - (i) no unauthorised party can obtain more than one feature of the personalised security credentials, the authentication devices or software when delivered through the same channel;
+ 
+    - (ii) the delivered personalised security credentials, authentication devices or software require activation before usage;
++## **▼B**
+ 
+ - (d) arrangements ensuring that, in cases where the personalised security credentials, the authentication devices or software have to be activated before their first use, the activation shall take place in a secure environment in accordance with the association procedures referred to in Article 24.
+ 
+
+[HUNK hunk_023]
+@@ -463,18 +460,19 @@ Payment service providers shall ensure that they have effective processes in pla
+ 
+ ## **COMMON AND SECURE OPEN STANDARDS OF COMMUNICATION**
+ 
+-Section 1
+ 
+-## **General requirements for communication**
++**G e n e r a l r e q u i r e m e n t s f o r c o m m u n i c a t i o n**
+ 
+-_Article 28_
++## _Article 28_
+ 
+ ## **Requirements for identification**
+ 
+ 1. Payment service providers shall ensure secure identification when communicating between the payer's device and the payee's acceptance devices for electronic payments, including but not limited to payment terminals.
+ 
+ 2. Payment service providers shall ensure that the risks of misdirection of communication to unauthorised parties in mobile applications and other payment services users' interfaces offering electronic payment services are effectively mitigated.
+-_Article 29_
++## **▼B**
++
++## _Article 29_
+ 
+ ## **Traceability**
+ 
+
+[HUNK hunk_024]
+@@ -488,11 +486,11 @@ _Article 29_
+ 
+ - (c) timestamps which shall be based on a unified time-reference system and which shall be synchronised according to an official time signal.
+ 
+-## Section 2
++S e c t i o n 2
+ 
+-## **Specific requirements for the common and secure open standards of communication**
++**S p e c i f i c r e q u i r e m e n t s f o r t h e c o m m o n a n d s e c u r e o p e n s t a n d a r d s o f c o m m u n i c a t i o n**
+ 
+-_Article 30_
++## _Article 30_
+ 
+ ## **General obligations for access interfaces**
+ 
+
+[HUNK hunk_025]
+@@ -503,6 +501,7 @@ _Article 30_
+ - (b) account information service providers are able to communicate securely to request and receive information on one or more designated payment accounts and associated payment transactions;
+ 
+ - (c) payment initiation service providers are able to communicate securely to initiate a payment order from the payer's payment account and receive all information on the initiation of the payment transaction and all information accessible to the account servicing payment service providers regarding the execution of the payment transaction.
++## **▼B**
+ 
+ 2. For the purposes of authentication of the payment service user, the interface referred to in paragraph 1 shall allow account information service providers and payment initiation service providers to rely on all the authentication procedures provided by the account servicing payment service provider to the payment service user.
+ 
+
+[HUNK hunk_026]
+@@ -513,16 +512,24 @@ The interface shall at least meet all of the following requirements:
+ - (b) communication sessions between the account servicing payment service provider, the account information service provider, the payment initiation service provider and any payment service user concerned shall be established and maintained throughout the authentication;
+ 
+ - (c) the integrity and confidentiality of the personalised security credentials and of authentication codes transmitted by or through the payment initiation service provider or the account information service provider shall be ensured.
++
+ 3. Account servicing payment service providers shall ensure that their interfaces follow standards of communication which are issued by international or European standardisation organisations.
+ 
+ Account servicing payment service providers shall also ensure that the technical specification of any of the interfaces is documented specifying a set of routines, protocols, and tools needed by payment initiation service providers, account information service providers and payment service providers issuing card-based payment instruments for allowing their software and applications to interoperate with the systems of the account servicing payment service providers.
+ 
+ Account servicing payment service providers shall at a minimum, and no less than 6 months before the application date referred to in Article 38(2), or before the target date for the market launch of the access interface when the launch takes place after the date referred to in Article 38(2), make the documentation available, at no charge, upon request by authorised payment initiation service providers, account information service providers and payment service providers issuing card-based payment instruments or payment service providers that have applied to their competent authorities for the relevant authorisation, and shall make a summary of the documentation publicly available on their website.
++## **▼B**
+ 
+ 4. In addition to paragraph 3, account servicing payment service providers shall ensure that, except for emergency situations, any change to the technical specification of their interface is made available to authorised payment initiation service providers, account information service providers and payment service providers issuing card-based payment instruments, or payment service providers that have applied to their competent authorities for the relevant authorisation, in advance as soon as possible and not less than 3 months before the change is implemented.
+ 
+ Payment service providers shall document emergency situations where changes were implemented and make the documentation available to competent authorities on request.
+ 
++## **▼M1**
++
++4a. By way of derogation from paragraph 4, account servicing payment service providers shall make available to the payment service providers referred to in this Article the changes made to the technical specifications of their interfaces in order to comply with Article 10a not less than 2 months before such changes are implemented.
++
++## **▼B**
++
+ 5. Account servicing payment service providers shall make available a testing facility, including support, for connection and functional testing to enable authorised payment initiation service providers, payment service providers issuing card-based payment instruments and account information service providers, or payment service providers that have applied for the relevant authorisation, to test their software and applications used for offering a payment service to users. This testing facility should be made available no later than 6 months before the application date referred to in Article 38(2) or before the target date for the market launch of the access interface when the launch takes place after the date referred to in Article 38(2).
+ 
+ However, no sensitive information shall be shared through the testing facility.
+
+[HUNK hunk_027]
+@@ -534,12 +541,14 @@ However, no sensitive information shall be shared through the testing facility.
+ ## **Access interface options**
+ 
+ Account servicing payment service providers shall establish the interface(s) referred to in Article 30 by means of a dedicated interface or by allowing the use by the payment service providers referred to in Article 30(1) of the interfaces used for authentication and communication with the account servicing payment service provider's payment services users.
++## **▼B**
+ 
+ ## _Article 32_
+ 
+ ## **Obligations for a dedicated interface**
+ 
+ 1. Subject to compliance with Article 30 and 31, account servicing payment service providers that have put in place a dedicated interface shall ensure that the dedicated interface offers at all times the same level of availability and performance, including support, as the interfaces made available to the payment service user for directly accessing its payment account online.
++
+ 2. Account servicing payment service providers that have put in place a dedicated interface shall define transparent key performance indicators and service level targets, at least as stringent as those set for the interface used by their payment service users both in terms of availability and of data provided in accordance with Article 36. Those interfaces, indicators and targets shall be monitored by the competent authorities and stress-tested.
+ 
+ 3. Account servicing payment service providers that have put in place a dedicated interface shall ensure that this interface does not create obstacles to the provision of payment initiation and account information services. Such obstacles, may include, among others, preventing the use by payment service providers referred to in Article 30(1) of the credentials issued by account servicing payment service providers to their customers, imposing redirection to the account servicing payment service provider's authentication or other functions, requiring additional authorisations and registrations in addition to those provided for in Articles 11, 14 and 15 of Directive (EU) 2015/2366, or requiring additional checks of the consent given by payment service users to providers of payment initiation and account information services.
+
+[HUNK hunk_028]
+@@ -551,6 +560,7 @@ Account servicing payment service providers shall establish the interface(s) ref
+ ## **Contingency measures for a dedicated interface**
+ 
+ 1. Account servicing payment service providers shall include, in the design of the dedicated interface, a strategy and plans for contingency measures for the event that the interface does not perform in compliance with Article 32, that there is unplanned unavailability of the interface and that there is a systems breakdown. Unplanned unavailability or a systems breakdown may be presumed to have arisen when five consecutive requests for access to information for the provision of payment initiation services or account information services are not replied to within 30 seconds.
++## **▼B**
+ 
+ 2. Contingency measures shall include communication plans to inform payment service providers making use of the dedicated interface of measures to restore the system and a description of the immediately available alternative options payment service providers may have during this time.
+ 
+
+[HUNK hunk_029]
+@@ -565,6 +575,7 @@ Account servicing payment service providers shall establish the interface(s) ref
+ - (b) continue to comply with the obligations following from Article 66(3) and Article 67(2) of Directive (EU) 2015/2366 respectively;
+ 
+ - (c) log the data that are accessed through the interface operated by the account servicing payment service provider for its payment service users, and provide, upon request and without undue delay, the log files to their competent national authority;
++
+ - (d) duly justify to their competent national authority, upon request and without undue delay, the use of the interface made available to the payment service users for directly accessing its payment account online;
+ 
+ - (e) inform the account servicing payment service provider accordingly.
+
+[HUNK hunk_030]
+@@ -572,6 +583,7 @@ Account servicing payment service providers shall establish the interface(s) ref
+ 6. Competent authorities, after consulting EBA to ensure a consistent application of the following conditions, shall exempt the account servicing payment service providers that have opted for a dedicated interface from the obligation to set up the contingency mechanism described under paragraph 4 where the dedicated interface meets all of the following conditions:
+ 
+ - (a) it complies with all the obligations for dedicated interfaces as set out in Article 32;
++## **▼B**
+ 
+ - (b) it has been designed and tested in accordance with Article 30(5) to the satisfaction of the payment service providers referred to therein;
+ 
+
+[HUNK hunk_031]
+@@ -581,7 +593,7 @@ Account servicing payment service providers shall establish the interface(s) ref
+ 
+ 7. Competent authorities shall revoke the exemption referred to in paragraph 6 where the conditions (a) and (d) are not met by the account servicing payment service providers for more than 2 consecutive calendar weeks. Competent authorities shall inform EBA of this revocation and shall ensure that the account servicing payment service provider establishes, within the shortest possible time and at the latest within 2 months, the contingency mechanism referred to in paragraph 4.
+ 
+-_Article 34_
++## _Article 34_
+ 
+ ## **Certificates**
+ 
+
+[HUNK hunk_032]
+@@ -591,6 +603,9 @@ _Article 34_
+ 
+ 3. For the purposes of this Regulation, qualified certificates for electronic seals or for website authentication referred to in paragraph 1 shall include, in a language customary in the sphere of international finance, additional specific attributes in relation to each of the following:
+ 
++> ([1] ) Directive 2013/36/EU of the European Parliament and of the Council of 26 June 2013 on access to the activity of credit institutions and the prudential supervision of credit institutions and investment firms, amending Directive 2002/87/EC and repealing Directives 2006/48/EC and 2006/49/EC (OJ L 176, 27.6.2013, p. 338).
++## **▼B**
++
+ - (a) the role of the payment service provider, which maybe one or more of the following:
+ 
+    - (i) account servicing;
+
+[HUNK hunk_033]
+@@ -605,7 +620,6 @@ _Article 34_
+ 
+ 4. The attributes referred to in paragraph 3 shall not affect the interoperability and recognition of qualified certificates for electronic seals or website authentication.
+ 
+-> ([1] ) Directive 2013/36/EU of the European Parliament and of the Council of 26 June 2013 on access to the activity of credit institutions and the prudential supervision of credit institutions and investment firms, amending Directive 2002/87/EC and repealing Directives 2006/48/EC and 2006/49/EC (OJ L 176, 27.6.2013, p. 338).
+ ## _Article 35_
+ 
+ ## **Security of communication session**
+
+[HUNK hunk_034]
+@@ -621,6 +635,7 @@ _Article 34_
+ - (a) the payment service user or users and the corresponding communication session in order to distinguish several requests from the same payment service user or users;
+ 
+ - (b) for payment initiation services, the uniquely identified payment transaction initiated;
++## **▼B**
+ 
+ - (c) for confirmation on the availability of funds, the uniquely identified request related to the amount necessary for the execution of the card-based payment transaction.
+ 
+
+[HUNK hunk_035]
+@@ -641,7 +656,9 @@ In case of loss of confidentiality of personalised security credentials under th
+ - (c) they shall, upon request, immediately provide payment service providers with a confirmation in a simple ‘yes’ or ‘no’ format, whether the amount necessary for the execution of a payment transaction is available on the payment account of the payer.
+ 
+ 2. In case of an unexpected event or error occurring during the process of identification, authentication, or the exchange of the data elements, the account servicing payment service provider shall send a notification message to the payment initiation service provider or the account information service provider and the payment service provider issuing card-based payment instruments which explains the reason for the unexpected event or error.
++
+ Where the account servicing payment service provider offers a dedicated interface in accordance with Article 32, the interface shall provide for notification messages concerning unexpected events or errors to be communicated by any payment service provider that detects the event or error to the other payment service providers participating in the communication session.
++## **▼B**
+ 
+ 3. Account information service providers shall have in place suitable and effective mechanisms that prevent access to information other than from designated payment accounts and associated payment transactions, in accordance with the user's explicit consent.
+ 
+
+[HUNK hunk_036]
+@@ -657,7 +674,7 @@ Where the account servicing payment service provider offers a dedicated interfac
+ 
+ ## **FINAL PROVISIONS**
+ 
+-_Article 37_
++## _Article 37_
+ 
+ ## **Review**
+ 
+
+[HUNK hunk_037]
+@@ -674,11 +691,9 @@ Without prejudice to Article 98(5) of Directive (EU) 2015/2366, EBA shall review
+ 3. However, paragraphs 3 and 5 of Article 30 shall apply from 14 March 2019.
+ 
+ This Regulation shall be binding in its entirety and directly applicable in all Member States.
++## **▼B**
+ 
+-Done at Brussels, 27 November 2017.
+-
+-_For the Commission The President_ Jean-Claude JUNCKER
+-## _ANNEX_
++_ANNEX_
+ 
+ ||Reference fraud rate (%) for:|Reference fraud rate (%) for:|
+ |---|---|---|

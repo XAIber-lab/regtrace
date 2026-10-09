@@ -1,0 +1,58 @@
+{
+  "annotation_id": "",
+  "document_id": "",
+  "comparison": {
+    "source": {
+      "file_name": "",
+      "version_label": "",
+      "date": ""
+    },
+    "target": {
+      "file_name": "",
+      "version_label": "",
+      "date": ""
+    }
+  },
+  "diff": {
+    "diff_file": ""
+  },
+  "changes": [
+    {
+      "change_id": "change_001_short_topic",
+      "raw_text": {
+        "source": "",
+        "target": "",
+        "diff_links": [
+          {
+            "hunk_id": "",
+            "diff_range": "",
+            "excerpt": ""
+          }
+        ]
+      },
+      "location": {
+        "source_location": null,
+        "target_location": null
+      },
+      "classification": {
+        "scope": "document_level | structural_level | textual_level | internal_reference | external_reference",
+        "change_operation": "create | update | delete",
+        "semantic": "conceptual_change | obligation_related_change | temporal_change",
+        "change_nature": "procedural | technical"
+      },
+      "classification_rationale": {
+        "scope": "",
+        "change_operation": "",
+        "semantic": "",
+        "change_nature": ""
+      },
+      "confidence_score": {
+        "classification": "very_sure | sure | unsure | weak | very_weak",
+        "classification_rationale": "very_sure | sure | unsure | weak | very_weak"
+      },
+      "summary": "",
+      "references": [],
+      "notes": null
+    }
+  ]
+}

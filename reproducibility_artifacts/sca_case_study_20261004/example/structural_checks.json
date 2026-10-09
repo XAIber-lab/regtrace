@@ -1,0 +1,9 @@
+{
+  "schema_and_change_ids_valid": true,
+  "action_counts": {
+    "prototype_modify": 1,
+    "control_new": 1
+  },
+  "description_and_target_issues": [],
+  "semantic_review_required": true
+}

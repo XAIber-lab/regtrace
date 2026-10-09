@@ -1,0 +1,43 @@
+{
+  "prepared_at_utc": "2026-10-04T13:25:53.637524+00:00",
+  "scope": "Focused Stage 4 test, one retained annotation with complete operative context; no workbook merge",
+  "language": "it",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "core_rows": 117,
+  "prototype_rows": 117,
+  "control_rows": 64,
+  "baseline_control_fields_unchanged": true,
+  "control_metadata_excludes_ai_proposal_columns": true,
+  "artifacts": [
+    {
+      "path": "reproducibility_artifacts/sca_case_study_20261004/example/CELEX_32018R0389_EN_TXT.md",
+      "sha256": "238fa0a0ac1cadf5064a3da9553b1956451a2742f119975afe2461e8c7c01381"
+    },
+    {
+      "path": "reproducibility_artifacts/sca_case_study_20261004/example/CELEX_02018R0389-20230725_EN_TXT.md",
+      "sha256": "a4c76839006deea46e726e53ed5b8e8995646bd395f79f8601616bab7f6f242d"
+    },
+    {
+      "path": "reproducibility_artifacts/sca_case_study_20261004/example/inputs/Controlli Prototipi_final.xlsx",
+      "sha256": "9a72e62f0537bed82fa30d91d46cbfc2093cb0067795f45cb728d057d9f50365",
+      "original_sha256": "9de64beac6efa092881e1130a9d2400f2864cf2bd97407ee15d33b93733769a3"
+    },
+    {
+      "path": "src\\contextualization_update.py",
+      "sha256": "4cc29e50e8181a76e98c062ef21219f7de196e2b463c4b8a2660bb9c43275c4f"
+    },
+    {
+      "path": "reproducibility_artifacts/sca_case_study_20261004/example/prompt.txt",
+      "sha256": "d27e066ae8325452886141ea0cc70db75763a0e9d619af8686df379ca48315c0"
+    },
+    {
+      "path": "reproducibility_artifacts/sca_case_study_20261004/example/contextualization_input_bundle.json",
+      "sha256": "e0ebd019005225c176f84777c9ebb5f0b442ecc3b8a06f7ef758bd9f4f047b33"
+    },
+    {
+      "path": "reproducibility_artifacts/sca_case_study_20261004/example/update_contextualization_schema.generated.json",
+      "sha256": "7606666c1f1e63fd26e866578c96d152b81fe76f9a70a9865818f1acc7ae304e"
+    }
+  ]
+}

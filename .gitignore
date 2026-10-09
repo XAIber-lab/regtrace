@@ -1,0 +1,11 @@
+/.venv
+.env
+__pycache__/
+*.log
+/Changelog/
+/Testo integrale/
+/runs/
+/outputs/workflow_prototype/
+
+/outputs/proof_of_concept/
+/tests/

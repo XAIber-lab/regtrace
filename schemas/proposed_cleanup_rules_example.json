@@ -1,0 +1,71 @@
+{
+  "document_id": "en_Guida_Nazionale_TIBER-IT",
+  "diff_file": "en_Guida_Nazionale_TIBER-IT_TO_en_Guida_Nazionale_TIBER-IT-v2.0(1).diff",
+  "proposed_rules": [
+    {
+      "rule_id": "rule_001",
+      "rule_name": "standalone_page_count_marker",
+      "rule_group": "source_specific_noise",
+      "noise_type": "page_number",
+      "description": "Remove standalone page count lines introduced by PDF extraction.",
+      "regex": "^\\d{1,3}\\s+of\\s+\\d{1,3}$",
+      "action": "remove_line",
+      "examples": [
+        "1 of 38",
+        "1 of 30",
+        "3 of 38",
+        "3 of 30",
+        "18 of 38",
+        "18 of 30"
+      ],
+      "risk_level": "low",
+      "rationale": "These lines recur throughout the diff as standalone page counters and do not contain regulatory provisions, obligations, thresholds, legal references, article text, section headings, tables, or annex content."
+    },
+    {
+      "rule_id": "rule_002",
+      "rule_name": "tiber_it_repeated_document_footer",
+      "rule_group": "document_specific_noise",
+      "noise_type": "page_header_footer",
+      "description": "Remove repeated standalone TIBER-IT document title/version footer lines.",
+      "regex": "^TIBER-IT National Guidance v\\.\\d+(?:\\.\\d+)?$",
+      "action": "remove_line",
+      "examples": [
+        "TIBER-IT National Guidance v.1.0",
+        "TIBER-IT National Guidance v.2.0"
+      ],
+      "risk_level": "low",
+      "rationale": "The same title/version line is repeated at page boundaries across both versions and functions as a footer rather than substantive regulatory content."
+    },
+    {
+      "rule_id": "rule_003",
+      "rule_name": "pymupdf_picture_text_delimiters",
+      "rule_group": "source_specific_noise",
+      "noise_type": "picture_text_marker",
+      "description": "Remove only the PyMuPDF picture text delimiter markers while preserving the extracted figure or table text between them.",
+      "regex": "\\*\\*-----\\s*(?:Start|End)\\s+of\\s+picture\\s+text\\s+-----\\*\\*<br>",
+      "action": "remove_inline_marker",
+      "examples": [
+        "**----- Start of picture text -----**<br>",
+        "**----- End of picture text -----**<br>"
+      ],
+      "risk_level": "low",
+      "rationale": "The delimiter strings are extraction markers, not regulatory content. The rule removes only the marker text and does not remove the surrounding figure text, acronym table text, dates, legal references, or deliverables."
+    },
+    {
+      "rule_id": "rule_004",
+      "rule_name": "markdown_table_separator_rows",
+      "rule_group": "source_specific_noise",
+      "noise_type": "markdown_formatting",
+      "description": "Review recurring Markdown table separator rows before any cleanup because they are formatting artifacts but belong to protected table structures.",
+      "regex": "^\\|(?:---\\|){2,}$",
+      "action": "review_manually",
+      "examples": [
+        "|---|---|",
+        "|---|---|---|",
+        "|---|---|---|---|"
+      ],
+      "risk_level": "high",
+      "rationale": "These separator rows recur in the diff and may be non-semantic Markdown formatting, but they are part of tables and indexes. Automatic removal could damage table structure, so this must not be applied without manual review."
+    }
+  ]
+}

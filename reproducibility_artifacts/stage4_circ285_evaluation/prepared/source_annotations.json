@@ -1,0 +1,232 @@
+{
+  "annotation_id": "annot_001",
+  "document_id": "Testo-integrale-al-15-aggto_TO_Testo-integrale-al-16-aggto",
+  "comparison": {
+    "source": {
+      "file_name": "Testo-integrale-al-15-aggto.md",
+      "version_label": "15° aggiornamento",
+      "date": null
+    },
+    "target": {
+      "file_name": "Testo-integrale-al-16-aggto.md",
+      "version_label": "16° aggiornamento",
+      "date": null
+    }
+  },
+  "diff": {
+    "diff_file": "Testo-integrale-al-15-aggto_TO_Testo-integrale-al-16-aggto.diff"
+  },
+  "changes": [
+    {
+      "change_id": "change_001_new_section_vii_internet_payments",
+      "raw_text": {
+        "source": null,
+        "target": "SEZIONE VII – PRINCIPI ORGANIZZATIVI RELATIVI A SPECIFICHE ATTIVITÀ O PROFILI DI RISCHIO\n\n1. Sicurezza dei pagamenti via internet",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_002",
+            "diff_range": "@@ -924,13 +928,17 @@ SEZIONE VI – L’ESTERNALIZZAZIONE DEL SISTEMA INFORMATIVO",
+            "excerpt": "+SEZIONE VII – PRINCIPI ORGANIZZATIVI RELATIVI A SPECIFICHE ATTIVITÀ O PROFILI DI RISCHIO\n+\n+1. Sicurezza dei pagamenti via internet"
+          },
+          {
+            "hunk_id": "hunk_040",
+            "diff_range": "@@ -12941,6 +12968,36 @@ Titolo IV – Governo societario, controlli interni e gestione dei rischi",
+            "excerpt": "+Sezione VII – Principi organizzativi relativi a specifiche attività o profili di rischio\n+\n+## _SEZIONE VII_\n+\n+PRINCIPI ORGANIZZATIVI RELATIVI A SPECIFICHE ATTIVITÀ O PROFILI DI RISCHIO\n+\n+## **1. Sicurezza dei pagamenti via internet**"
+          }
+        ]
+      },
+      "location": {
+        "source_location": null,
+        "target_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione VII"
+      },
+      "classification": {
+        "scope": "structural_level",
+        "change_operation": "create",
+        "semantic": "conceptual_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "Creation of a new operative section within Chapter 4 devoted to a specific risk area and topic.",
+        "change_operation": "The target introduces a new section heading and substantive section text where none existed in the source.",
+        "semantic": "The change introduces a new regulatory concept and area of application: organizational principles for internet payment security.",
+        "change_nature": "The provision sets an organizational and compliance framework rather than a technical control specification alone."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "Creates a new Section VII in Chapter 4 for organizational principles on internet payment security.",
+      "references": [
+        "Circolare n. 285 del 17 dicembre 2013",
+        "Parte Prima, Titolo IV, Capitolo 4",
+        "Orientamenti finali sulla sicurezza dei pagamenti via internet emanati dall’ABE"
+      ],
+      "notes": null
+    },
+    {
+      "change_id": "change_002_external_reference_update_eba_guidelines",
+      "raw_text": {
+        "source": "dalle _Recommendations for the security of internet payments_ emanate dalla BCE il 31 gennaio 2013 (1).",
+        "target": "dagli Orientamenti finali sulla sicurezza dei pagamenti via Internet, emanati dall’ABE il 19 dicembre 2014 ([1] ).",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_011",
+            "diff_range": "@@ -12154,27 +12163,21 @@ La materia è regolata:",
+            "excerpt": "- dalle _Recommendations for the security of internet payments_ emanate dalla BCE il 31 gennaio 2013 (1).\n+— dagli Orientamenti finali sulla sicurezza dei pagamenti via Internet, emanati dall’ABE il 19 dicembre 2014 ([1] ).\n@@\n-> (1) http://www.ecb.europa.eu/pub/pdf/other/recommendationsforthesecurityofinternetpaymentsen.pdf.\n+> ([1] ) https://www.eba.europa.eu/documents/10180/1004450/EBA_2015_IT+Guidelines+on+Internet+Payments.pdf/b9c5dee978bd-47c5-a80c-4d2f3f8a1de2"
+          }
+        ]
+      },
+      "location": {
+        "source_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione I, Fonti normative",
+        "target_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione I, Fonti normative"
+      },
+      "classification": {
+        "scope": "external_reference",
+        "change_operation": "update",
+        "semantic": "conceptual_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "The operative text updates the external guideline cited as the regulatory basis.",
+        "change_operation": "An existing reference to ECB recommendations is replaced with a new reference to EBA final guidelines.",
+        "semantic": "The change alters the external normative framework and interpretive basis for the section.",
+        "change_nature": "This is a governance and compliance-reference update, not a technical control change."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "Replaces ECB recommendations with EBA final guidelines on internet payment security and updates the source link.",
+      "references": [
+        "ABE Guidelines on Internet Payments",
+        "BCE Recommendations for the security of internet payments"
+      ],
+      "notes": null
+    },
+    {
+      "change_id": "change_003_scope_extension_internet_payments",
+      "raw_text": {
+        "source": "Le presenti disposizioni si applicano:\n\n- alle banche autorizzate in Italia, ad eccezione delle succursali di banche extracomunitarie aventi negli Stati indicati nell'Allegato A delle Disposizioni introduttive (3);\n\n- alle capogruppo di gruppi bancari;\n\n- alle imprese di riferimento, secondo quanto previsto dalla Sezione VI del Capitolo 3",
+        "target": "Le presenti disposizioni si applicano:\n\n- alle banche autorizzate in Italia, ad eccezione delle succursali di banche extracomunitarie aventi sede negli Stati indicati nell'Allegato A delle Disposizioni introduttive (3); queste ultime si attengono esclusivamente a quanto previsto dalla Sezione VII, par. 1, con riferimento alla prestazione di servizi di pagamento tramite internet;\n\n- alle capogruppo di gruppi bancari;\n\n- alle imprese di riferimento, secondo quanto previsto dalla Sezione VI del Capitolo 3.",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_015",
+            "diff_range": "@@ -12271,11 +12285,7 @@ Sezione I – Disposizioni di carattere generale",
+            "excerpt": "- alle banche autorizzate in Italia, ad eccezione delle succursali di banche extracomunitarie aventi negli Stati indicati nell'Allegato A delle Disposizioni introduttive (3);\n\n-- alle capogruppo di gruppi bancari;\n-\n-- alle imprese di riferimento, secondo quanto previsto dalla Sezione VI del Capitolo 3\n+- alle banche autorizzate in Italia, ad eccezione delle succursali di banche extracomunitarie aventi sede negli Stati indicati nell'Allegato A delle Disposizioni introduttive (3); queste"
+          },
+          {
+            "hunk_id": "hunk_016",
+            "diff_range": "@@ -12284,7 +12294,22 @@ Parte Prima.IV.4.4",
+            "excerpt": "16° aggiornamento\n+Parte Prima – Recepimento in Italia della CRD IV\n+\n+Titolo IV – Governo societario, controlli interni e gestione dei rischi Capitolo 4 – Il sistema informativo Sezione I – Disposizioni di carattere generale\n+ ultime si attengono esclusivamente a quanto previsto dalla Sezione VII, par. 1, con riferimento alla prestazione di servizi di pagamento tramite internet;\n+\n+- alle capogruppo di gruppi bancari;\n+\n+- alle imprese di riferimento, secondo quanto previsto dalla Sezione VI del Capitolo 3.\n+..."
+          }
+        ]
+      },
+      "location": {
+        "source_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione I, Ambito di applicazione",
+        "target_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione I, Ambito di applicazione"
+      },
+      "classification": {
+        "scope": "textual_level",
+        "change_operation": "update",
+        "semantic": "obligation_related_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "The change modifies the applicability clause within an existing operative provision.",
+        "change_operation": "The source applicability text is expanded with a new carve-out and compliance instruction for certain branches.",
+        "semantic": "It changes who must comply and adds a specific compliance path for internet payment services.",
+        "change_nature": "This is a procedural scope-and-compliance adjustment."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "Narrows the applicability clause so affected branches of non-EU banks comply only with the new internet payment security section for payment services via internet.",
+      "references": [
+        "Circolare n. 285 del 17 dicembre 2013",
+        "Parte Prima, Titolo IV, Capitolo 4, Sezione VII"
+      ],
+      "notes": null
+    },
+    {
+      "change_id": "change_004_new_internet_payment_obligations",
+      "raw_text": {
+        "source": null,
+        "target": "Le banche che prestano alla propria clientela servizi di pagamento tramite canale internet si attengono agli “Orientamenti finali sulla sicurezza dei pagamenti via internet” emanati dall’ABE ([1] ). In linea con quanto previsto dagli Orientamenti, è rimessa alla valutazione di ogni banca la scelta se attenersi anche agli esempi di Migliori Prassi di cui all’Allegato 1 dei citati Orientamenti.\n\nGli obblighi imposti integrano e specificano le disposizioni sul Sistema informativo con riferimento alla _governance_ e all’organizzazione del sistema informativo; la gestione del rischio informatico; i requisiti per assicurare la sicurezza informatica e il sistema di gestione dei dati.\n\nIn linea con l’impostazione generale della disciplina in materia di controlli interni e gestione dei rischi e fermi restando i casi in cui gli Orientamenti prescrivono obblighi specifici (come nel caso dell’utilizzo dell’ “autenticazione forte”), le banche applicano le disposizioni contenute negli Orientamenti secondo il principio di proporzionalità, cioè tenuto conto della dimensione e complessità operative, della natura dell’attività svolta, della tipologia dei servizi prestati.",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_040",
+            "diff_range": "@@ -12941,6 +12968,36 @@ Titolo IV – Governo societario, controlli interni e gestione dei rischi",
+            "excerpt": "+## **1. Sicurezza dei pagamenti via internet**\n+\n+Le banche che prestano alla propria clientela servizi di pagamento tramite canale internet si attengono agli “Orientamenti finali sulla sicurezza dei pagamenti via internet” emanati dall’ABE ([1] ). In linea con quanto previsto dagli Orientamenti, è rimessa alla valutazione di ogni banca la scelta se attenersi anche agli esempi di Migliori Prassi di cui all’Allegato 1 dei citati Orientamenti.\n+\n+Gli obblighi imposti integrano e specificano le disposizioni sul Sistema informativo con riferimento alla _governance_ e all’organizzazione del sistema informativo; la gestione del rischio informatico; i requisiti per assicurare la sicurezza informatica e il sistema di gestione dei dati.\n+\n+In linea con l’impostazione generale della disciplina in materia di controlli interni e gestione dei rischi e fermi restando i casi in cui gli Orientamenti prescrivono obblighi specifici (come nel caso dell’utilizzo dell’ “autenticazione forte”), le banche applicano le disposizioni contenute negli Orientamenti secondo il principio di proporzionalità, cioè tenuto conto della dimensione e complessità operative, della natura dell’attività svolta, della tipologia dei servizi prestati."
+          }
+        ]
+      },
+      "location": {
+        "source_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione VII",
+        "target_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione VII"
+      },
+      "classification": {
+        "scope": "structural_level",
+        "change_operation": "create",
+        "semantic": "obligation_related_change",
+        "change_nature": "procedural"
+      },
+      "classification_rationale": {
+        "scope": "A new operative section is introduced with substantive requirements for banks offering internet payment services.",
+        "change_operation": "The target adds new mandatory compliance text that did not exist in the source.",
+        "semantic": "The text imposes obligations to follow EBA guidelines, optionally consider best practices, and apply proportionality.",
+        "change_nature": "The requirements are organizational and compliance-oriented rather than technical implementation controls."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "Introduces new compliance requirements for banks offering internet payment services, including adherence to EBA guidelines and proportional application.",
+      "references": [
+        "ABE Guidelines on Internet Payments",
+        "Circolare n. 285 del 17 dicembre 2013"
+      ],
+      "notes": null
+    },
+    {
+      "change_id": "change_005_security_controls_and_monitoring_update",
+      "raw_text": {
+        "source": "la segmentazione della rete di telecomunicazione, con controllo dei flussi scambiati, in particolare tra domini connotati da diversi livelli di sicurezza (ad es., sistemi e utenti interni, applicazioni _core,_ sistemi e utenti esterni); l’accesso a sistemi e servizi critici tramite canali pubblici (ad es., nel caso dell’ _e-banking_ tramite internet) sono presidiati in modo da soddisfare rigorosi requisiti di sicurezza e fornire un livello di protezione conforme ai rischi da fronteggiare (2);",
+        "target": "la segmentazione della rete di telecomunicazione, con controllo dei flussi scambiati, in particolare tra domini connotati da diversi livelli di sicurezza (ad es., sistemi e utenti interni, applicazioni _core,_ sistemi e utenti esterni); l’accesso a sistemi e servizi critici tramite canali pubblici (ad es., nel caso dell’ _e-banking_ tramite internet) sono presidiati in modo da soddisfare rigorosi requisiti di sicurezza e fornire un livello di protezione conforme ai rischi da fronteggiare; con riferimento ai servizi di pagamento tramite internet si applicano gli “Orientamenti finali in materia di sicurezza dei pagamenti via internet” emanati dall’ABE, secondo quanto specificato nella Sezione VII;",
+        "diff_links": [
+          {
+            "hunk_id": "hunk_026",
+            "diff_range": "@@ -12608,7 +12635,7 @@ La sicurezza delle informazioni e delle risorse informatiche è garantita attrav",
+            "excerpt": "- la segmentazione della rete di telecomunicazione, con controllo dei flussi scambiati, in particolare tra domini connotati da diversi livelli di sicurezza (ad es., sistemi e utenti interni, applicazioni _core,_ sistemi e utenti esterni); l’accesso a sistemi e servizi critici tramite canali pubblici (ad es., nel caso dell’ _e-banking_ tramite internet) sono presidiati in modo da soddisfare rigorosi requisiti di sicurezza e fornire un livello di protezione conforme ai rischi da fronteggiare (2);\n+ la segmentazione della rete di telecomunicazione, con controllo dei flussi scambiati, in particolare tra domini connotati da diversi livelli di sicurezza (ad es., sistemi e utenti interni, applicazioni _core,_ sistemi e utenti esterni); l’accesso a sistemi e servizi critici tramite canali pubblici (ad es., nel caso dell’ _e-banking_ tramite internet) sono presidiati in modo da soddisfare rigorosi requisiti di sicurezza e fornire un livello di protezione conforme ai rischi da fronteggiare; con riferimento ai servizi di pagamento tramite internet si applicano gli “Orientamenti finali in materia di sicurezza dei pagamenti via internet” emanati dall’ABE, secondo quanto specificato nella Sezione VII;"
+          }
+        ]
+      },
+      "location": {
+        "source_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione IV, requisiti di sicurezza",
+        "target_location": "Parte Prima, Titolo IV, Capitolo 4, Sezione IV, requisiti di sicurezza"
+      },
+      "classification": {
+        "scope": "textual_level",
+        "change_operation": "update",
+        "semantic": "obligation_related_change",
+        "change_nature": "technical"
+      },
+      "classification_rationale": {
+        "scope": "The change amends an existing security-control provision within the ICT security section.",
+        "change_operation": "The sentence is updated to add a new compliance clause for internet payment services.",
+        "semantic": "It expands the required security framework by tying it to EBA internet payment guidelines.",
+        "change_nature": "The affected content concerns network segmentation, access control, and security protections, which are technical controls."
+      },
+      "confidence_score": {
+        "classification": "very_sure",
+        "classification_rationale": "very_sure"
+      },
+      "summary": "Adds an explicit requirement to apply EBA internet payment security guidelines for payment services via internet within the ICT security controls.",
+      "references": [
+        "ABE Guidelines on Internet Payments",
+        "Circolare n. 285 del 17 dicembre 2013"
+      ],
+      "notes": null
+    }
+  ]
+}

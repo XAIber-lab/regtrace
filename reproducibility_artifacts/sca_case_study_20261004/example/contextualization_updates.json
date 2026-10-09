@@ -1,0 +1,58 @@
+{
+  "contextualization_id": "ctx_CELEX_32018R0389_annotation_001",
+  "document_id": "CELEX_32018R0389",
+  "source_annotation_id": "annotation_001",
+  "language": "it",
+  "change_contextualizations": [
+    {
+      "change_id": "change_003_interface_change_deadline",
+      "cybersecurity_relevance": "relevant",
+      "relevance_rationale": "La modifica introduce un requisito operativo esplicito relativo alla gestione delle modifiche di un'interfaccia ICT impiegata per l'accesso ai conti di pagamento e per l'applicazione delle regole di autenticazione dell'articolo 10a. L'articolo 30, paragrafo 4a, impone di rendere disponibili le modifiche delle specifiche tecniche almeno due mesi prima della loro attuazione.",
+      "classe": "Obbligatoria",
+      "priority": "Da verificare",
+      "framework_mappings": [
+        {
+          "subcategory_id": "PR.IP-03",
+          "subcategory_text": "PR.IP-3: Sono attivi processi di controllo della modifica delle configurazioni",
+          "mapping_weight": "MEDIO",
+          "rationale": "Il nuovo termine minimo riguarda il governo delle modifiche alle specifiche tecniche delle interfacce. La relazione con PR.IP-03 è parziale ma diretta: l'articolo 30, paragrafo 4a, disciplina la comunicazione anticipata di una specifica categoria di modifiche, senza definire l'intero processo di controllo delle configurazioni."
+        }
+      ],
+      "prototype_actions": [
+        {
+          "action": "modify",
+          "subcategory_id": "PR.IP-03",
+          "subcategory_text": "PR.IP-03: Sono attivi processi di controllo della modifica delle configurazioni",
+          "existing_row": 373,
+          "classe": "Obbligatoria",
+          "priority": "ALTA",
+          "source_reference": "Reg. Del. UE 2018/389, Art. 30(4a)",
+          "rationale": "Aggiornare il riferimento normativo della contestualizzazione PR.IP-03 per includere il nuovo requisito temporale applicabile alle modifiche delle specifiche tecniche delle interfacce effettuate per conformarsi all'articolo 10a. Il testo della sottocategoria e i metadati esistenti sono conservati; il supporto è il nuovo articolo 30, paragrafo 4a."
+        }
+      ],
+      "control_actions": [
+        {
+          "action": "new",
+          "existing_control_row": null,
+          "existing_control_id": null,
+          "control_text": "I prestatori di servizi di pagamento di radicamento del conto rendono disponibili ai prestatori di servizi di pagamento di cui all'articolo 30 le modifiche apportate alle specifiche tecniche delle loro interfacce per conformarsi all'articolo 10a almeno due mesi prima della loro attuazione.",
+          "subcategories_with_weight": "PR.IP-03 (MEDIO)",
+          "references": "Reg. Del. UE 2018/389 (Art. 30, par. 4a; Art. 10a)",
+          "priority": "Da verificare",
+          "delegated_to": null,
+          "rationale": "Il nuovo articolo 30, paragrafo 4a, introduce un obbligo distinto e verificabile: le modifiche delle specifiche tecniche necessarie per conformarsi all'articolo 10a devono essere messe a disposizione dei prestatori interessati almeno due mesi prima dell'attuazione. I controlli forniti non coprono questo specifico destinatario, presupposto e termine; il nuovo controllo è quindi associato a PR.IP-03 con peso medio, coerentemente con la mappatura di framework."
+        }
+      ],
+      "notes": "L'applicabilità è limitata ai prestatori di servizi di pagamento di radicamento del conto e alle modifiche delle specifiche tecniche effettuate per conformarsi all'articolo 10a. La priorità del nuovo requisito e il soggetto organizzativo responsabile devono essere determinati in base al perimetro operativo dell'organizzazione; non sono stati forniti criteri sufficienti per assegnarli."
+    }
+  ],
+  "merge_summary": {
+    "relevant_changes": 1,
+    "non_relevant_changes": 0,
+    "uncertain_changes": 0,
+    "new_items": 1,
+    "modifications": 1,
+    "deprecations": 0,
+    "summary": "La modifica è rilevante per la sicurezza dei pagamenti e per la gestione delle modifiche delle interfacce ICT. Si propone l'aggiornamento del riferimento della contestualizzazione PR.IP-03 e un nuovo controllo sul preavviso minimo di due mesi previsto dall'articolo 30, paragrafo 4a, soggetto ad approvazione umana."
+  }
+}

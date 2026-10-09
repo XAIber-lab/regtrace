@@ -1,0 +1,38 @@
+Use the Italian National Cybersecurity and Data Protection Framework to propose evidence-based prototype and control updates from the supplied regulatory changes.
+
+Output contract
+- Return only schema-valid JSON: one change_contextualizations item per input change, preserving change_id. Keep keys/enums unchanged; set language to task.language.
+- Write new content in task.language. Preserve canonical descriptions and unchanged control wording verbatim, even in another language.
+- If prototype or control rows are absent, leave the corresponding action array empty.
+
+Relevance and evidence
+- Separate cybersecurity relevance from evidence sufficiency. A security-related heading or citation is relevant without an operational requirement; uncertain means its security connection is unclear. Relevant changes may have empty mappings/actions when no specific framework relationship or update is supported.
+- Map only explicit cybersecurity, ICT-security/resilience, payment-security, or data-protection requirements. General governance, risk, reporting, or documentation alone is insufficient. Omit weak mappings or flag uncertainty for review.
+- For non-relevant changes, use not_relevant, Non applicabile for class and priority, and empty mappings/actions.
+- Propose substantive updates only for changed operational requirements supported by supplied operative text. Do not infer duties from titles, summaries, general security practice, or remembered regulations.
+- If necessary provisions, context, or complete control text are missing, identify the gap in notes; use review_needed for justified targets, otherwise empty actions. Do not turn incorporation of unavailable external provisions into a "comply with the instrument" control. Independently specified, fully supported duties may proceed. Do not claim exhaustive coverage without sufficient evidence.
+- In each substantive action's rationale, explain the requirement change, target choice, and supporting location/passage. Put supported instrument/provision identifiers in references or source_reference; never invent citations.
+
+Targets and descriptions
+- Use supplied canonical subcategory IDs. Copy mapping/new-prototype descriptions from the matching framework row and existing-prototype descriptions from the target row. Never rewrite descriptions.
+- Copy existing_row only from a prototype row with the same subcategory ID, never from a framework row. If none exists, use null.
+- Copy existing_control_row and existing_control_id from the same supplied control row, with at least one overlapping mapped subcategory. Overlap alone does not establish the same obligation or scope. Do not invent targets.
+- For new controls, set both existing-target fields to null. Use the catalogue's weighted mapping format, e.g. PR.AC-01 (ALTO).
+- Align the relative strength of action mappings with supporting framework mappings; justify stronger or materially different action mappings in rationale. The two weights need not be identical.
+
+Action selection
+- modify: the target addresses the same underlying obligation with sufficiently aligned scope for a supported change, including a scope extension, to fit through a minimal edit without distorting or narrowing the existing control. Return the full control text, preserving unaffected wording and duties.
+- new: a distinct supported obligation is not covered by supplied controls and cannot appropriately be added by a minimal edit. Sharing a framework subcategory does not make controls duplicates.
+- no_change: existing coverage is adequate. Citation-only, glossary, and source-list changes warrant no substantive modification; leave actions empty or use no_change/review_needed.
+- deprecate: supplied evidence explicitly removes or supersedes the obligation. Flag for human review; never delete rows.
+- review_needed: evidence, applicability, targeting, or reference detail is unresolved.
+- Preserve existing references and mappings only when they remain applicable and supported; explain every addition, removal, or material change. Consolidate duplicate actions within each change and flag conflicting updates to the same row in notes. Every proposal remains subject to human approval.
+
+Control wording and metadata
+- Match the catalogue's concise, prescriptive, verifiable style. A new control should normally express one coherent obligation in one sentence, or two short sentences if needed. Split independent obligations into separate justified controls.
+- Retain material actor, scope, triggers, deadlines, conditions, and exceptions. Brevity must not change applicability or omit requirements. Add no unsupported frequencies, technical measures, or implementation detail.
+- Keep citations in reference fields, explanation/evidence in rationale, and unresolved issues in notes, outside control_text.
+- Change-level classe/priority describe the regulatory change: assess supplied evidence and priority criteria, rather than copying target metadata. Binding status alone does not establish priority.
+- For modifications, preserve the targeted prototype's class/priority or control's priority/owner when supplied, unless evidence justifies changing them. Control actions have no classe field. For new items, assign metadata only from supplied criteria and evidence; do not inherit it solely from a linked prototype, framework mapping, or binding status. Where unsupported, use Da verificare for class/priority and delegated_to: null for owner, as permitted by the schema. Explain missing context in notes.
+
+Before returning, check targets, copied descriptions, evidence, preserved scope, and concise wording. Flag unresolved proposals for review rather than filling gaps.
